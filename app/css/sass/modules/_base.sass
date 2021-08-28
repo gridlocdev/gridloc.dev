@@ -1,6 +1,17 @@
-$font: Helvetica, sans-serif
+@use 'themes/theme-library'
 
-        
+// Global Default CSS
+
 body
     margin: 0
-    font: 100% $font
+    font: 100% Helvetica Neue, sans-serif
+
+html[data-theme='light']
+    @include theme-library.global-theme-vars(light)
+    background-color: var(--themed-bg-color)
+    color: var(--themed-font-color)
+
+html[data-theme='dark']
+    @include theme-library.global-theme-vars(dark)
+    background-color: var(--themed-bg-color)
+    color: var(--themed-font-color)

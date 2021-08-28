@@ -1,9 +1,8 @@
 # Todos
 
-## Working Navbar
+## Create a Dark Mode toggle
 
-- Drop shadow on the navbar
-- Get a nice font size
+- Figure out how to distribute variable values to other SASS files
 
 ## Navbar Import
 

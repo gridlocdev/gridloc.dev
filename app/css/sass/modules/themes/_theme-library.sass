@@ -1,0 +1,24 @@
+// This file contains a library of vanilla CSS variables that are re-used throughout the application.
+/* To use, 
+ 
+ 1. Import the library at the top of the file using @use 'themes/theme-library'
+ 2. Load any of the themed variables by using vanilla CSS variable syntax e.g.: 
+ color: var(--themed-font-color)
+ */
+
+@mixin global-theme-vars($theme: null)
+    @if $theme == 'dark'
+        --themed-bg-color: rgb(24, 25, 27)
+        --themed-bg-color-heavy: rgb(19, 19, 20)
+        --themed-font-color: rgb(203, 238, 238)
+        --themed-primary-color: rgb(16, 67, 177)
+    @if $theme == 'light'
+        --themed-bg-color: rgb(232, 243, 255)
+        --themed-bg-color-heavy: #fff
+        --themed-font-color: #000
+        --themed-primary-color: rgb(31, 102, 255)
+
+// html[data-theme='light'] *
+//     @include global-theme-vars(light)
+// html[data-theme='dark'] *
+//     @include global-theme-vars(dark)
