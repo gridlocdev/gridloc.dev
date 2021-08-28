@@ -1,6 +1,7 @@
 @use 'sass:math'
 
-@use 'themes/theme-library'
+@use 'library/themes'
+@use 'library/buttons'
 
 %flex-centered
     display: flex
@@ -49,17 +50,9 @@ img
     width: 100%
     height: 30%
 
-html[data-theme="light"] .header
-    --header-gradient-color-top: #fff
-    --header-gradient-color-bottom: #000
-
-html[data-theme="dark"] .header 
-    --header-gradient-color-top: #000
-    --header-gradient-color-bottom: #fff
-
 .header
     @extend %row
-    font-size: 64px
+    font-size: 48px
     background: -webkit-linear-gradient(var(--header-gradient-color-top), var(--header-gradient-color-bottom))
     -webkit-background-clip: text
     -webkit-text-fill-color: transparent
@@ -67,3 +60,29 @@ html[data-theme="dark"] .header
 .details
     @extend %row
     font-size: 20px
+
+.logo
+    padding: 25px
+    filter: var(--logo-filter)
+
+.button-row
+    @extend %row
+    @extend %flex-centered
+    justify-content: space-around
+
+html[data-theme="light"]
+
+    .header
+        --header-gradient-color-top: rgb(79, 135, 255)
+        --header-gradient-color-bottom: rgb(0, 81, 255)
+
+    .logo
+        --logo-filter: invert(0%) sepia(0%) saturate(1%) hue-rotate(132deg) brightness(96%) contrast(102%)
+
+html[data-theme="dark"]
+
+    .header
+        --header-gradient-color-top: rgb(97, 126, 255)
+        --header-gradient-color-bottom: rgb(48, 110, 245)
+    .logo
+        --logo-filter: invert(100%) sepia(100%) saturate(27%) hue-rotate(98deg) brightness(106%) contrast(109%)

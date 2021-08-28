@@ -1,5 +1,5 @@
 /* To use, 
- * 1. Import the library at the top of the file using @use 'themes/theme-library'
+ * 1. Import the library at the top of the file using @use 'library/themes'
  * 2. Load any of the themed variables by using vanilla CSS variable syntax e.g.: 
  * color: var(--themed-font-color)
  * */
@@ -54,8 +54,40 @@ header .nav-item {
   font-weight: bold;
   color: #fff;
 }
+header .nav-item:hover {
+  cursor: pointer;
+}
 
-div.right, .jumbotron {
+.button {
+  border: 0;
+  padding: 2%;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--themed-primary-color);
+  color: #fff;
+  font-weight: bold;
+  font-size: 1em;
+  transition: linear 0.125s;
+}
+
+.button:hover {
+  background-color: #1c57d7;
+  box-shadow: 7.5px 7.5px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.button.icon {
+  border-radius: 50%;
+  width: fit-content;
+}
+.button.icon img {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  filter: invert(100%) sepia(100%) saturate(27%) hue-rotate(98deg) brightness(106%) contrast(109%);
+}
+
+.button-row, div.right, .jumbotron {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -65,7 +97,7 @@ div.left {
   flex-direction: column;
 }
 
-.details, .header {
+.button-row, .details, .header {
   flex-direction: row;
 }
 
@@ -114,18 +146,8 @@ img {
   height: 30%;
 }
 
-html[data-theme=light] .header {
-  --header-gradient-color-top: #fff;
-  --header-gradient-color-bottom: #000;
-}
-
-html[data-theme=dark] .header {
-  --header-gradient-color-top: #000;
-  --header-gradient-color-bottom: #fff;
-}
-
 .header {
-  font-size: 64px;
+  font-size: 48px;
   background: -webkit-linear-gradient(var(--header-gradient-color-top), var(--header-gradient-color-bottom));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -133,6 +155,31 @@ html[data-theme=dark] .header {
 
 .details {
   font-size: 20px;
+}
+
+.logo {
+  padding: 25px;
+  filter: var(--logo-filter);
+}
+
+.button-row {
+  justify-content: space-around;
+}
+
+html[data-theme=light] .header {
+  --header-gradient-color-top: rgb(79, 135, 255);
+  --header-gradient-color-bottom: rgb(0, 81, 255);
+}
+html[data-theme=light] .logo {
+  --logo-filter: invert(0%) sepia(0%) saturate(1%) hue-rotate(132deg) brightness(96%) contrast(102%);
+}
+
+html[data-theme=dark] .header {
+  --header-gradient-color-top: rgb(97, 126, 255);
+  --header-gradient-color-bottom: rgb(48, 110, 245);
+}
+html[data-theme=dark] .logo {
+  --logo-filter: invert(100%) sepia(100%) saturate(27%) hue-rotate(98deg) brightness(106%) contrast(109%);
 }
 
 /*# sourceMappingURL=index.css.map */

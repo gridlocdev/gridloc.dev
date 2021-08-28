@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="css/index.css">
 
@@ -18,14 +18,13 @@
 <body>
     <header>
         <nav class="nav-left">
-            <input onclick="toggleTheme()" type="button" value="CLICK ME">
-            <span class="nav-item">gridlocdev</span>
+            <a class="nav-item">gridlocdev</a>
         </nav>
         <nav class="nav-right">
-            <span class="nav-item">projects</span>
-            <span class="nav-item">skills</span>
-            <span class="nav-item">notes</span>
-            <span class="nav-item">about</span>
+            <a class="nav-item">projects</a>
+            <a class="nav-item">skills</a>
+            <a class="nav-item">notes</a>
+            <a class="nav-item">about</a>
             </span>
         </nav>
     </header>
@@ -36,10 +35,15 @@
                 <h1 class="header">Lorem Ipsum, bada bing, bada boom, bop, pow.</h1>
                 <h6 class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h6>
+                <div class="button-row">
+                    <input class="button" type="button" value="See what I've created!">
+                    <button class="button icon dark-theme-toggle" onclick="toggleTheme()" type="button" value="CLICK ME">
+                        <img src="assets/images/dark_mode_black_24dp.svg" alt="frog" srcset="">
+                    </button>
+                </div>
             </div>
             <div class="right">
-                <img src="https://cdn.britannica.com/84/206384-131-207CC735/Javan-gliding-tree-frog.jpg" alt="frog"
-                    srcset="">
+                <img class="logo" src="assets/images/angry boi.svg" alt="frog" srcset="">
             </div>
         </div>
     </main>
