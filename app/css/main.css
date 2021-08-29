@@ -3,6 +3,10 @@ body {
   font: 100% Helvetica Neue, sans-serif;
 }
 
+a:hover {
+  cursor: pointer;
+}
+
 html[data-theme=light] {
   --themed-bg-color: rgb(232, 243, 255);
   --themed-bg-color-heavy: #fff;
@@ -48,9 +52,6 @@ header .nav-item {
   font-size: 1rem;
   font-weight: bold;
   color: #fff;
-}
-header .nav-item:hover {
-  cursor: pointer;
 }
 
 .button {
@@ -144,6 +145,7 @@ img {
 .header {
   font-size: 48px;
   background: -webkit-linear-gradient(var(--header-gradient-color-top), var(--header-gradient-color-bottom));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -153,7 +155,7 @@ img {
 }
 
 .logo {
-  padding: 25px;
+  padding: 50px;
   filter: var(--logo-filter);
 }
 
