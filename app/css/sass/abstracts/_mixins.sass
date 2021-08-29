@@ -1,0 +1,8 @@
+@use '../themes/light'
+@use '../themes/dark'
+
+@mixin theme($theme: null)
+    @if $theme == 'light'
+        @include light.theme
+    @if $theme == 'dark'
+        @include dark.theme

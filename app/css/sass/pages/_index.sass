@@ -1,18 +1,11 @@
-@use 'library/themes'
-@use 'sass:math'
-
-// Global Default CSS
-
-body
-    margin: 0
-    font: 100% Helvetica Neue, sans-serif
+@use '../abstracts/mixins'
 
 html[data-theme='light']
-    @include themes.global-theme-vars(light)
+    @include mixins.theme(light)
     background-color: var(--themed-bg-color)
     color: var(--themed-font-color)
 
 html[data-theme='dark']
-    @include themes.global-theme-vars(dark)
+    @include mixins.theme(dark)
     background-color: var(--themed-bg-color)
     color: var(--themed-font-color)

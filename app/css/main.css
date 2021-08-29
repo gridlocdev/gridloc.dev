@@ -1,8 +1,3 @@
-/* To use, 
- * 1. Import the library at the top of the file using @use 'library/themes'
- * 2. Load any of the themed variables by using vanilla CSS variable syntax e.g.: 
- * color: var(--themed-font-color)
- * */
 body {
   margin: 0;
   font: 100% Helvetica Neue, sans-serif;
@@ -162,10 +157,6 @@ img {
   filter: var(--logo-filter);
 }
 
-.button-row {
-  justify-content: space-around;
-}
-
 html[data-theme=light] .header {
   --header-gradient-color-top: rgb(79, 135, 255);
   --header-gradient-color-bottom: rgb(0, 81, 255);
@@ -182,4 +173,4 @@ html[data-theme=dark] .logo {
   --logo-filter: invert(100%) sepia(100%) saturate(27%) hue-rotate(98deg) brightness(106%) contrast(109%);
 }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=main.css.map */

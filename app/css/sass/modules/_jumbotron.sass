@@ -1,7 +1,7 @@
 @use 'sass:math'
 
-@use 'library/themes'
-@use 'library/buttons'
+@use '../abstracts/mixins'
+@use 'buttons'
 
 %flex-centered
     display: flex
@@ -68,7 +68,6 @@ img
 .button-row
     @extend %row
     @extend %flex-centered
-    justify-content: space-around
 
 html[data-theme="light"]
 
