@@ -20,21 +20,25 @@
         <nav class="nav-left">
             <a class="nav-item">gridlocdev</a>
         </nav>
-        <span>
-            <span class="nav-item">
-                Dark mode
+        <div class="row full-centered">
+            <span id="dark-theme-label" class="nav-item hide-on-portrait">
+                Dark theme
             </span>
-            <button class="button icon dark-theme-toggle" onclick="toggleTheme()" type="button" value="CLICK ME">
-                <img src="assets/images/dark_mode_black_24dp.svg" alt="frog" srcset="">
+            <button class="button icon dark-theme-toggle-button hide-on-portrait" onclick="toggleTheme()" type="button"
+                value="CLICK ME">
+                <img src="assets/images/dark_mode_black_24dp.svg" alt="toggle dark theme" srcset="">
             </button>
-        </span>
+        </div>
         <nav class="nav-right">
             <a class="nav-item">projects</a>
             <a class="nav-item">skills</a>
             <a class="nav-item">notes</a>
             <a class="nav-item">about</a>
-            </span>
         </nav>
+        <button class="button icon dark-theme-toggle-button hide-on-landscape" onclick="toggleTheme()" type="button"
+            value="CLICK ME">
+            <img src="assets/images/dark_mode_black_24dp.svg" alt="frog" srcset="">
+        </button>
     </header>
 
     <main>

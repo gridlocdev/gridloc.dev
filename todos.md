@@ -1,9 +1,10 @@
 # Todos
 
-## Create a Dark Mode toggle
+## Make the Call to Action larger
 
-- Figure out how to distribute variable values to other SASS files
+## For each section of the navbar:
 
-## Navbar Import
-
-- Create the logic to import the header and footer in the page's Javascript
+- Storyboard what type of layout to use
+- Collect a list of links to the projects
+  - Github Pages websites
+  - github code urls
