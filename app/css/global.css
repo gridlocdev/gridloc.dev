@@ -1,4 +1,27 @@
 body {
+    background-color: #181818;
     font: 100% Helvetica Neue, sans-serif;
     height: 300vh;
+}
+
+.lighter-bg-color {
+    background-color: #222;
+}
+
+.jumbotron-header {
+    background: -webkit-linear-gradient(#35FF24, #0E8603);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.jumbotron-button {
+    color: white;
+    font-weight: bold;
+    background-color: #25BB00;
+    border-radius: 500px;
+}
+
+.jumbotron-button:hover, .jumbotron-button:focus {
+    outline: 0;
+    background-color: #1c8a00;
 }
