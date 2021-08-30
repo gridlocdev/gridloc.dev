@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -9,57 +9,61 @@
 
     <link rel="shortcut icon" href="assets/favicon/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="css/main.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
 
-    <script type="text/javascript" src="index.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="css/global.css">
 </head>
 
 <body>
-    <header>
-        <nav class="nav-left">
-            <a class="nav-item">gridlocdev</a>
-        </nav>
-        <div class="row full-centered">
-            <span id="dark-theme-label" class="nav-item hide-on-portrait">
-                Dark theme
-            </span>
-            <button class="button icon dark-theme-toggle-button hide-on-portrait" onclick="toggleTheme()" type="button"
-                value="CLICK ME">
-                <img src="assets/images/dark_mode_black_24dp.svg" alt="toggle dark theme" srcset="">
-            </button>
-        </div>
-        <nav class="nav-right">
-            <a class="nav-item">projects</a>
-            <a class="nav-item">skills</a>
-            <a class="nav-item">notes</a>
-            <a class="nav-item">about</a>
-        </nav>
-        <button class="button icon dark-theme-toggle-button hide-on-landscape" onclick="toggleTheme()" type="button"
-            value="CLICK ME">
-            <img src="assets/images/dark_mode_black_24dp.svg" alt="frog" srcset="">
-        </button>
-    </header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark text-bold">
+        <div class="container-fluid">
+            <div class="d-flex flex-grow-1">
+                <span class="w-100 d-md-none d-block">
+                    <!-- hidden spacer to center brand on mobile -->
+                </span>
+                <a class="navbar-brand" href="#">
 
-    <main>
-        <div class="jumbotron">
-            <div class="left">
-                <h1 class="header">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum</h1>
-                <h6 class="details">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</h6>
-                <div class="button-row">
-                    <input class="button" type="button" value="See what I've created!">
+                </a>
+                <a class="navbar-brand d-none d-md-inline-block" href="#">
+                    <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
+                    <strong>gridlocdev</strong> </a>
+                <a class="navbar-brand-two mx-auto d-md-none d-inline-block" href="#">
+                    <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
+                </a>
+                <div class="w-100 text-right">
+                    <button class="navbar-toggler" style="border: 3px solid rgba(255,255,255,0.3);" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#myNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
                 </div>
             </div>
-            <div class="right">
-                <img class="logo" src="assets/images/angry boi.svg" alt="frog" srcset="">
+            <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item nav-active"><strong>projects</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item"><strong>tools</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item"><strong>skills</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item"><strong>notes</strong></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link m-2 menu-item"><strong>about</strong></a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </main>
-
-    <footer>
-
-    </footer>
+    </nav>
 </body>
 
 </html>
