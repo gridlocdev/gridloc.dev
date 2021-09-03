@@ -4,12 +4,17 @@ body {
     height: 300vh;
 }
 
+.card {
+    box-shadow: 0px 5px 10px #111;
+}
+
 .lighter-bg-color {
     background-color: #222;
 }
 
 .jumbotron-header {
     background: -webkit-linear-gradient(#35FF24, #0E8603);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -24,4 +29,23 @@ body {
 .jumbotron-button:hover, .jumbotron-button:focus {
     outline: 0;
     background-color: #1c8a00;
+    box-shadow: 0px 5px 10px #111;
+}
+
+.fab-button {
+    width: 69px;
+    height: 69px;
+    line-height: normal;
+    color: #333;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-radius: 500px;
+    box-shadow: 0px 5px 5px #111;
+}
+
+.fab-button:hover, .fab-button:focus {
+    color: #111;
+    outline: 0;
+    background-color: #AAA;
+    box-shadow: 0px 5px 15px #111;
 }
