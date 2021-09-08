@@ -5,8 +5,8 @@ export default [
         "technologies": "Vue 2, Vuetify, VueX",
         "bootstrap_icon": "bi-textarea-t",
         "links": {
-            "repository": "https://github.com/gridlocdev/textadventure",
-            "website": "https://gridlocdev.github.io/textadventure"
+            "repository": "https://github.com/gridlocdev/text-adventure",
+            "website": "https://gridlocdev.github.io/text-adventure"
         },
     },
     {
@@ -15,8 +15,8 @@ export default [
         "technologies": "Vue 2, Vuetify",
         "bootstrap_icon": "bi-music-player",
         "links": {
-            "repository": "https://github.com/gridlocdev/drummachine",
-            "website": "https://gridlocdev.github.io/drummachine"
+            "repository": "https://github.com/gridlocdev/drum-machine",
+            "website": "https://gridlocdev.github.io/drum-machine"
         },
     },
     {
@@ -45,8 +45,8 @@ export default [
         "technologies": "Unity (Game Engine)",
         "bootstrap_icon": "bi-box",
         "links": {
-            "repository": "https://github.com/gridlocdev/cubeSlide",
-            "website": "https://gridlocdev.github.io/cubeSlide"
+            "repository": "https://github.com/gridlocdev/cube-slide",
+            "website": "https://gridlocdev.github.io/cube-slide"
         },
     },
 ]

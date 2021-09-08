@@ -7,7 +7,7 @@
   - [projects](#projects)
     - [cube-slide](#cube-slide)
     - [text-adventure](#text-adventure)
-    - [drummachine](#drummachine)
+    - [drum-machine](#drum-machine)
     - [chess-clock](#chess-clock)
     - [(old) portfolio website](#old-portfolio-website)
   - [notes](#notes)
@@ -23,19 +23,19 @@ I enjoy creating things, so in my spare time I have created some web application
 
 A Unity game where you weave around obstacles to reach the goal.
 
-Link to website: [https://gridlocdev.github.io/cubeSlide/](https://gridlocdev.github.io/cubeSlide/)
+Link to website: [https://gridlocdev.github.io/cube-slide/](https://gridlocdev.github.io/cube-slide/)
 
 ### text-adventure
 
 A website made in VueJS where you can create a playable text adventure game.
 
-Link to website: [https://gridlocdev.github.io/textadventure/](https://gridlocdev.github.io/textadventure/)
+Link to website: [https://gridlocdev.github.io/text-adventure/](https://gridlocdev.github.io/text-adventure/)
 
-### drummachine
+### drum-machine
 
 A website made in VueJS where you can play a virtual drumkit using the keyboard.
 
-Link to website: [https://gridlocdev.github.io/drummachine/](https://gridlocdev.github.io/drummachine/)
+Link to website: [https://gridlocdev.github.io/drum-machine/](https://gridlocdev.github.io/drum-machine/)
 
 ### chess-clock
 
