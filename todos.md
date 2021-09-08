@@ -1,4 +1,5 @@
 # Todos
 
-- Add the "Notes" section
-- On clicking the navbar tabs or CTA button, scroll to the appropriate location on the page.
+- Add the "About" section
+- Add the "Skills" section
+- Add the "Tools" section
