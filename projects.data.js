@@ -23,7 +23,7 @@ export default [
         "name": "Chess Clock",
         "description": "A web-based clock for timing games of Chess.",
         "technologies": "Angular, Angular Material",
-        "bootstrap_icon": "bi-watch",
+        "bootstrap_icon": "bi-stopwatch",
         "links": {
             "repository": "https://github.com/gridlocdev/chess-clock",
             "website": "https://gridlocdev.github.io/chess-clock"
