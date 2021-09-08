@@ -45,8 +45,8 @@ export default [
         "technologies": "Unity (Game Engine)",
         "bootstrap_icon": "bi-box",
         "links": {
-            "repository": "https://github.com/gridlocdev/portfolio",
-            "website": "https://gridlocdev.github.io/portfolio"
+            "repository": "https://github.com/gridlocdev/cubeSlide",
+            "website": "https://gridlocdev.github.io/cubeSlide"
         },
     },
 ]
