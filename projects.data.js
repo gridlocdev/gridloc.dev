@@ -25,8 +25,8 @@ export default [
         "technologies": "Angular, Angular Material",
         "bootstrap_icon": "bi-watch",
         "links": {
-            "repository": "https://github.com/gridlocdev/portfolio",
-            "website": "https://gridlocdev.github.io/portfolio"
+            "repository": "https://github.com/gridlocdev/chess-clock",
+            "website": "https://gridlocdev.github.io/chess-clock"
         },
     },
     {
