@@ -13,7 +13,7 @@ export default [
         "name": "Drum Machine",
         "description": "A drum machine that you can play with the keyboard.",
         "technologies": "Vue 2, Vuetify",
-        "bootstrapIcon": "bi-music-player",
+        "bootstrapIcon": "bi-file-music",
         "links": {
             "repository": "https://github.com/gridlocdev/drum-machine",
             "website": "https://gridlocdev.github.io/drum-machine"
@@ -30,16 +30,6 @@ export default [
         },
     },
     {
-        "name": "Portfolio (old)",
-        "description": "My old portfolio website, when I was just getting started with web development. It contains a similar set of links to my projects to this website!",
-        "technologies": "Vue 2, Bootstrap-vue",
-        "bootstrapIcon": "bi-map",
-        "links": {
-            "repository": "https://github.com/gridlocdev/portfolio",
-            "website": "https://gridlocdev.github.io/portfolio"
-        },
-    },
-    {
         "name": "Cube Slide",
         "description": "A platformer video game with no jumping, where a cube slides around obstacles to make its way to the goal.",
         "technologies": "Unity (Game Engine)",
@@ -47,6 +37,26 @@ export default [
         "links": {
             "repository": "https://github.com/gridlocdev/cube-slide",
             "website": "https://gridlocdev.github.io/cube-slide"
+        },
+    },
+    {
+        "name": "Portfolio (this site)",
+        "description": "A website that lists all of my projects. Clicking the website link gets you recursion woo!",
+        "technologies": "Vanilla JS, Bootstrap",
+        "bootstrapIcon": "bi-box",
+        "links": {
+            "repository": "https://github.com/gridlocdev/gridlocdev.github.io",
+            "website": "https://gridlocdev.github.io"
+        },
+    },
+    {
+        "name": "Portfolio (old)",
+        "description": "My old portfolio website, when I was just getting started with web development. It contains a similar set of links to my projects to this website!",
+        "technologies": "Vue 2, Bootstrap-vue",
+        "bootstrapIcon": "bi-map",
+        "links": {
+            "repository": "https://github.com/gridlocdev/portfolio",
+            "website": "https://gridlocdev.github.io/portfolio"
         },
     },
 ]
