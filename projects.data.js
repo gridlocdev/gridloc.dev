@@ -43,7 +43,7 @@ export default [
         "name": "Portfolio (this site)",
         "description": "A website that lists all of my projects. Clicking the website link gets you recursion woo!",
         "technologies": "Vanilla JS, Bootstrap",
-        "bootstrapIcon": "bi-box",
+        "bootstrapIcon": "bi-newspaper",
         "links": {
             "repository": "https://github.com/gridlocdev/gridlocdev.github.io",
             "website": "https://gridlocdev.github.io"
@@ -53,7 +53,7 @@ export default [
         "name": "Portfolio (old)",
         "description": "My old portfolio website, when I was just getting started with web development. It contains a similar set of links to my projects to this website!",
         "technologies": "Vue 2, Bootstrap-vue",
-        "bootstrapIcon": "bi-map",
+        "bootstrapIcon": "bi-archive",
         "links": {
             "repository": "https://github.com/gridlocdev/portfolio",
             "website": "https://gridlocdev.github.io/portfolio"
