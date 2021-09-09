@@ -24,6 +24,15 @@
     <link rel="stylesheet" href="css/global.css">
     <script type="module" src="data-loader.js"></script>
     <script type="text/javascript" src="index.js"></script>
+
+    <script>
+        // DEBUGGING CODE: Scroll to bottom of page on page load for Live Server's hot reload
+        console.log("Hit")
+        window.onload = function () {
+            window.scrollTo(0, document.body.scrollHeight)
+        }
+    </script>
+
 </head>
 
 <body>
@@ -67,8 +76,9 @@
                         data-bs-target=".navbar-collapse.show">
                         <a class="nav-item nav-link m-2 menu-item"><strong>notes</strong></a>
                     </li>
-                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
-                        <a href="#" class="nav-item nav-link m-2 menu-item"><strong>about</strong></a>
+                    <li onclick="scrollToElement('about');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        <a class="nav-item nav-link m-2 menu-item"><strong>about</strong></a>
                     </li>
                     <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>skills</strong></a>
@@ -140,6 +150,66 @@
             </div>
         </div>
     </div>
+
+    <!-- 
+    
+        Section: About 
+    
+    -->
+
+    <div id="about" class="p-5 mb-4 text-white rounded-3 bg-dark">
+        <h1 class="text-center"><strong>about <span class="jumbotron-header">gridlocdev</span></strong></h1>
+        <div class="container-fluid py-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 mx-auto ">
+                    <div class="row p-3">
+                        My name is Aaron, and I've been a professional software engineer since 2019.
+                    </div>
+                    <div class="row p-3">
+                        The projects I've built here have been a great experience to enhance my skills as a
+                        programmer and also to have something to look back on years down the line.
+                    </div>
+                    <div class="row p-3">
+                        If I build anything more in my spare time, I'll be sure to include it on my portfolio site here.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+        Section: About 
+    
+    -->
+
+    <div id="skills" class="p-5 mb-4 text-white rounded-3">
+        <div class="container-fluid py-5">
+            <div class="row text-center">
+                <h1 class="mx-auto"><strong>skills</strong></h1>
+            </div>
+            <div class="row text-center py-3">
+                <div class="col">
+                    <h4 class="">programming languages</h4>
+                </div>
+            </div>
+            <div class="row text-center py-3">
+                <div class="col-sm-2 mx-auto">
+                    <img src="assets/images/programming-languages/TypeScript.svg" title="TypeScript"
+                        alt="TypeScript logo" width="48px">
+                </div>
+                <div class="col-sm-2 mx-auto">
+                    <img src="assets/images/programming-languages/JavaScript.svg" title="JavaScript"
+                        alt="JavaScript logo" width="48px">
+                </div>
+                <div class="col-sm-2 mx-auto">
+                    <img src="assets/images/programming-languages/PowerShell.png" title="PowerShell"
+                        alt="PowerShell logo" width="48px">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 
     
         End of FIle 

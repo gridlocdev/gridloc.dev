@@ -14,6 +14,9 @@
     - [networking](#networking)
     - [devops](#devops)
     - [security](#security)
+  - [about](#about)
+  - [skills](#skills)
+  - [tools](#tools)
 
 ## projects
 
@@ -68,3 +71,34 @@ Link to website: [https://gridlocdev.github.io/devops/](https://gridlocdev.githu
 Notes about some fundamental concepts of how computers can communicate securely over the internet.
 
 Link to website: [https://gridlocdev.github.io/devops/](https://gridlocdev.github.io/devops/)
+
+## about
+
+I'll add a small blurb to the website about myself as a developer. Check out the site for more details! [https://gridlocdev.github.io](https://gridlocdev.github.io)
+
+## skills
+
+In this section, I'll define the roles that I can do as a software dev.
+
+- Full-stack developer
+- DevOps engineer
+
+## tools
+
+In this section, I'll define the tools I typically use to get the job done.
+
+- Programming Languages
+  - JavaScript
+  - TypeScript
+  - C#
+  - PowerShell
+  - Python
+- Frameworks
+  - Angular
+  - VueJS
+  - .NET Framework
+  - .NET Core
+  - Blazor
+- Cloud
+  - Azure DevOps
+  - Azure
