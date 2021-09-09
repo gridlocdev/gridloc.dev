@@ -43,11 +43,11 @@
                 <a class="navbar-brand" href="#">
 
                 </a>
-                <a class="navbar-brand d-none d-md-inline-block nav-item"
-                    onclick="scrollToElement('jumbotron')" ;>
+                <a class="navbar-brand d-none d-md-inline-block nav-item" onclick="scrollToElement('jumbotron')">
                     <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
                     <strong>gridlocdev</strong> </a>
-                <a class="navbar-brand-two mx-auto d-md-none d-inline-block" href="#">
+                <a class="navbar-brand-two mx-auto d-md-none d-inline-block" onclick="scrollToElement('jumbotron')"
+                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                     <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
                 </a>
                 <div class="w-100 text-right">
@@ -60,18 +60,20 @@
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li onclick="scrollToElement('projects');" class="nav-item">
-                        <a class="nav-item nav-link m-2 menu-item nav-active"><strong>projects</strong></a>
+                        <a class="nav-item nav-link m-2 menu-item nav-active" data-bs-toggle="collapse"
+                            data-bs-target=".navbar-collapse.show"><strong>projects</strong></a>
                     </li>
-                    <li onclick="scrollToElement('notes');" class="nav-item">
+                    <li onclick="scrollToElement('notes');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
                         <a class="nav-item nav-link m-2 menu-item"><strong>notes</strong></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>about</strong></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>skills</strong></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>tools</strong></a>
                     </li>
                 </ul>
@@ -97,7 +99,8 @@
                         time,
                         feel free to check it out.</p>
                     <div class="py-2 text-center">
-                        <button onclick="scrollToElement('projects')" class="btn btn-primary btn-lg jumbotron-button" type="button">sounds
+                        <button onclick="scrollToElement('projects')" class="btn btn-primary btn-lg jumbotron-button"
+                            type="button">sounds
                             cool</button>
                     </div>
                 </div>
