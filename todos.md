@@ -1,3 +1,3 @@
 # Todos
 
-- Add a BootStrap ScrollSpy, which lights up the navbar elements as you go to them
+- The "Skills" and "Tools" section is a bit bare-bones. Adding some more detail in there would be nice
