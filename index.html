@@ -27,9 +27,8 @@
 
     <script>
         // DEBUGGING CODE: Scroll to bottom of page on page load for Live Server's hot reload
-        console.log("Hit")
         window.onload = function () {
-            scrollToElement('attributions')
+            scrollToElement('notes')
         }
     </script>
 
@@ -133,9 +132,6 @@
         <div class="row text-center">
             <h1 class="fw-bold">projects</h1>
         </div>
-        <div class="row text-center pt-4">
-            <span class="mx-auto text-muted">A list of the projects that I have created</span>
-        </div>
         <div class="container-fluid py-5">
             <div id="projects-inject-root" class="row">
                 <!-- Project elements here are injected by JavaScript -->
@@ -154,7 +150,7 @@
             <h1 class="fw-bold">notes</h1>
         </div>
         <div class="row text-center pt-4">
-            <span class="text-muted">A list of the projects that I have created</span>
+            <span class="text-muted">Here is a collection of notes that I wrote while learning about various industry related topics.</span>
         </div>
         <div class="container-fluid py-5">
             <div id="notes-inject-root" class="row">
@@ -174,9 +170,9 @@
             <h1 class="fw-bold">about <span class="jumbotron-header">gridlocdev</span></h1>
         </div>
         <div class="row text-center pt-4">
-            <span class="text-muted">A list of the projects that I have created</span>
+            <span class="text-muted">Here is a bit of information about me as a developer, if you care about that stuff.</span>
         </div>
-        <div class="container-fluid pt-4">
+        <div class="container-fluid py-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mx-auto ">
                     <div class="row p-3">
@@ -193,21 +189,17 @@
             </div>
         </div>
 
+        <!-- Sub-Section: Skills -->
+
         <!-- Sub-Section: Tools -->
 
-        <div id="tools" class="px-md-5 mb-4 text-white rounded-3">
-            <div class="container-fluid pb-5">
-                <div class="row text-center py-3">
-                    <h1 class="mx-auto"><strong>tools</strong></h1>
-                </div>
-                <div class="row text-center pb-4">
-                    <span class="text-muted">I really just like how these icons look</span>
-                </div>
+        <div class="px-md-5 my-4 text-white rounded-3">
+            <div id="tools" class="container-fluid pb-5">
 
                 <!-- Sub-Sub-Section: Programming Languages -->
 
                 <div class="row text-center py-3">
-                    <h4 class="">programming languages</h4>
+                    <h3>programming languages</h3>
                 </div>
                 <div class="col-sm-12 col-md-9 col-lg-6 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
@@ -237,9 +229,9 @@
                 <!-- Sub-Sub-Section: Frameworks -->
 
                 <div class="row text-center py-3">
-                    <h4 class="">frameworks</h4>
+                    <h3>frameworks</h3>
                 </div>
-                <div class="col-sm-12 col-md-9 col-lg-6 mx-auto pb-3">
+                <div class="col-sm-10 col-md-7 col-lg-4 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
                         <div class="col mx-auto py-3">
                             <img src="assets/images/frameworks/Angular.svg" title="Angular" alt="Angular logo"
@@ -249,11 +241,11 @@
                             <img src="assets/images/frameworks/Vue.svg" title="Vue" alt="Vue logo" height="48px">
                         </div>
                         <div class="col mx-auto py-3">
-                            <img src="assets/images/frameworks/Blazor.svg" title="Blazor" alt="Blazor logo"
-                                height="48px">
+                            <img src="assets/images/frameworks/NET_Logo.svg" title=".NET" alt=".NET logo" height="48px">
                         </div>
                         <div class="col mx-auto py-3">
-                            <img src="assets/images/frameworks/NET_Logo.svg" title=".NET" alt=".NET logo" height="48px">
+                            <img src="assets/images/frameworks/Blazor.svg" title="Blazor" alt="Blazor logo"
+                                height="48px">
                         </div>
                     </div>
                 </div>
@@ -261,9 +253,9 @@
                 <!-- Sub-Sub-Section: Cloud -->
 
                 <div class="row text-center py-3">
-                    <h4 class="">cloud</h4>
+                    <h3>cloud</h3>
                 </div>
-                <div class="col-sm-9 col-md-6 col-lg-3 mx-auto pb-3">
+                <div class="col-sm-6 col-md-5 col-lg-2 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
                         <div class="col mx-auto py-3">
                             <img src="assets/images/cloud/Azure DevOps.svg" title="Azure DevOps" alt="Azure DevOps logo"
@@ -315,7 +307,8 @@
                     </span>
                 </li>
                 <li class="list-group-item body-bg-color-dark">
-                    <span class="text-white">Python Logo is a derivative work by <i>me</i>, and is based on the official logo by
+                    <span class="text-white">Python Logo is a derivative work by <i>me</i>, and is based on the official
+                        logo by
                         Python Software Foundation
                         subject under the</span>
                     <a href="https://www.python.org/psf/trademarks/">PSF Trademark Usage Policy<i
@@ -335,16 +328,16 @@
                             class="bi bi-link"></i></a>
                 </li>
                 <li class="list-group-item body-bg-color-dark">
-                    <a href="https://commons.wikimedia.org/wiki/File:Blazor.png">Blazor Logo <i
+                    <a href="https://commons.wikimedia.org/w/index.php?curid=90587630">.NET Logo <i
                             class="bi bi-link"></i></a>
-                    <span class="text-white"> by dotnet is licensed under</span>
+                    <span class="text-white"> by Microsoft is licensed under</span>
                     <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0<i
                             class="bi bi-link"></i></a>
                 </li>
                 <li class="list-group-item body-bg-color-dark">
-                    <a href="https://commons.wikimedia.org/w/index.php?curid=90587630">.NET Logo <i
+                    <a href="https://commons.wikimedia.org/wiki/File:Blazor.png">Blazor Logo <i
                             class="bi bi-link"></i></a>
-                    <span class="text-white"> by Microsoft is licensed under</span>
+                    <span class="text-white"> by dotnet is licensed under</span>
                     <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0<i
                             class="bi bi-link"></i></a>
                 </li>
