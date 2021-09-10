@@ -29,7 +29,7 @@
         // DEBUGGING CODE: Scroll to bottom of page on page load for Live Server's hot reload
         console.log("Hit")
         window.onload = function () {
-            window.scrollTo(0, document.body.scrollHeight)
+            scrollToElement('attributions')
         }
     </script>
 
@@ -80,10 +80,12 @@
                         data-bs-target=".navbar-collapse.show">
                         <a class="nav-item nav-link m-2 menu-item"><strong>about</strong></a>
                     </li>
-                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <li onclick="scrollToElement('skills');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>skills</strong></a>
                     </li>
-                    <li class="nav-item" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                    <li onclick="scrollToElement('tools');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
                         <a href="#" class="nav-item nav-link m-2 menu-item"><strong>tools</strong></a>
                     </li>
                 </ul>
@@ -128,7 +130,12 @@
     -->
 
     <div id="projects" class="p-5 mb-4 text-white rounded-3 bg-dark">
-        <h1 class="text-center"><strong>projects</strong></h1>
+        <div class="row text-center">
+            <h1 class="fw-bold">projects</h1>
+        </div>
+        <div class="row text-center pt-4">
+            <span class="mx-auto text-muted">A list of the projects that I have created</span>
+        </div>
         <div class="container-fluid py-5">
             <div id="projects-inject-root" class="row">
                 <!-- Project elements here are injected by JavaScript -->
@@ -143,7 +150,12 @@
     -->
 
     <div id="notes" class="p-5 mb-4 text-white rounded-3">
-        <h1 class="text-center"><strong>notes</strong></h1>
+        <div class="row text-center">
+            <h1 class="fw-bold">notes</h1>
+        </div>
+        <div class="row text-center pt-4">
+            <span class="text-muted">A list of the projects that I have created</span>
+        </div>
         <div class="container-fluid py-5">
             <div id="notes-inject-root" class="row">
                 <!-- Notes elements here are injected by JavaScript -->
@@ -158,8 +170,13 @@
     -->
 
     <div id="about" class="p-5 mb-4 text-white rounded-3 bg-dark">
-        <h1 class="text-center"><strong>about <span class="jumbotron-header">gridlocdev</span></strong></h1>
-        <div class="container-fluid py-5">
+        <div class="row text-center">
+            <h1 class="fw-bold">about <span class="jumbotron-header">gridlocdev</span></h1>
+        </div>
+        <div class="row text-center pt-4">
+            <span class="text-muted">A list of the projects that I have created</span>
+        </div>
+        <div class="container-fluid pt-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mx-auto ">
                     <div class="row p-3">
@@ -178,10 +195,13 @@
 
         <!-- Sub-Section: Tools -->
 
-        <div id="tools" class="px-5 mb-4 text-white rounded-3">
-            <div class="container-fluid py-5">
+        <div id="tools" class="px-md-5 mb-4 text-white rounded-3">
+            <div class="container-fluid pb-5">
                 <div class="row text-center py-3">
                     <h1 class="mx-auto"><strong>tools</strong></h1>
+                </div>
+                <div class="row text-center pb-4">
+                    <span class="text-muted">I really just like how these icons look</span>
                 </div>
 
                 <!-- Sub-Sub-Section: Programming Languages -->
@@ -189,7 +209,7 @@
                 <div class="row text-center py-3">
                     <h4 class="">programming languages</h4>
                 </div>
-                <div class="col-5 mx-auto pb-3">
+                <div class="col-sm-12 col-md-9 col-lg-6 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
                         <div class="col mx-auto py-3">
                             <img src="assets/images/programming-languages/TypeScript.svg" title="TypeScript"
@@ -219,7 +239,7 @@
                 <div class="row text-center py-3">
                     <h4 class="">frameworks</h4>
                 </div>
-                <div class="col-5 mx-auto pb-3">
+                <div class="col-sm-12 col-md-9 col-lg-6 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
                         <div class="col mx-auto py-3">
                             <img src="assets/images/frameworks/Angular.svg" title="Angular" alt="Angular logo"
@@ -233,12 +253,7 @@
                                 height="48px">
                         </div>
                         <div class="col mx-auto py-3">
-                            <img src="assets/images/frameworks/NET Core.svg" title=".NET Core" alt=".NET Core logo"
-                                height="48px">
-                        </div>
-                        <div class="col mx-auto py-3">
-                            <img src="assets/images/frameworks/NET Framework.svg" title=".NET Framework"
-                                alt=".NET Framework logo" height="48px">
+                            <img src="assets/images/frameworks/NET_Logo.svg" title=".NET" alt=".NET logo" height="48px">
                         </div>
                     </div>
                 </div>
@@ -248,7 +263,7 @@
                 <div class="row text-center py-3">
                     <h4 class="">cloud</h4>
                 </div>
-                <div class="col-5 mx-auto pb-3">
+                <div class="col-sm-9 col-md-6 col-lg-3 mx-auto pb-3">
                     <div class="row text-center py-3 shadowed">
                         <div class="col mx-auto py-3">
                             <img src="assets/images/cloud/Azure DevOps.svg" title="Azure DevOps" alt="Azure DevOps logo"
@@ -265,111 +280,86 @@
 
     <div id="attributions" class="p-5 mb-4 text-white rounded-3">
         <div class="row">
-            All images present in this website are the Intellectual Property of their respective Copyright holders via
-            public domain, MIT, or Creative Commons licenses.
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg">TypeScript Logo <i
-                        class="bi bi-link"></i></a>
-                by Microsoft is licensed under public domain
+            <span class="text-muted text-center px-5">
+                Attributions - All logos present in this website are the Intellectual Property of their respective
+                Copyright holders via
+                public domain, MIT, or Creative Commons licenses.
             </span>
         </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg">JavaScript Logo <i
-                        class="bi bi-link"></i></a>
-                by Chris Williams is licensed under the public domain <a
-                    href="https://github.com/voodootikigod/logo.js/blob/master/LICENSE">MIT License<i
-                        class="bi bi-link"></i></a>
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                C# Logo is a derivative work by <i>me</i>, and is based on the unofficial public domain C# logo
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:PowerShell_5.0_icon.png">PowerShell Logo <i
-                        class="bi bi-link"></i></a>
-                by Microsoft is
-                licensed under public domain
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:Blazor.png">Python Logo <i class="bi bi-link"></i></a>
-                is a
-                derivative work by <i>me</i>, and is based on the official logo by Python Software Foundation
-                subject under the <a href="https://www.python.org/psf/trademarks/">PSF Trademark Usage Policy<i
-                        class="bi bi-link"></i></a>
-            </span>
+        <div class="row px-5 py-4">
+            <ul class="list-group">
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/wiki/File:Typescript_logo_2020.svg">TypeScript Logo<i
+                            class="bi bi-link"></i></a>
+                    <span class="text-white"> by Microsoft is licensed under public domain</span>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/wiki/File:Unofficial_JavaScript_logo_2.svg">JavaScript Logo<i
+                            class="bi bi-link"></i></a>
+                    <span class="text-white"> by Chris Williams is licensed under public domain</span>
+                    <a href="https://github.com/voodootikigod/logo.js/blob/master/LICENSE">
+                        MIT License
+                        <i class="bi bi-link"></i>
+                    </a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <span class="text-white">
+                        C# Logo is a derivative work by <i>me</i>, and is based on the unofficial public domain C# logo
+                    </span>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/wiki/File:PowerShell_5.0_icon.png">PowerShell Logo<i
+                            class="bi bi-link"></i></a>
+                    <span class="text-white">
+                        by Microsoft is licensed under public domain
+                    </span>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <span class="text-white">Python Logo is a derivative work by <i>me</i>, and is based on the official logo by
+                        Python Software Foundation
+                        subject under the</span>
+                    <a href="https://www.python.org/psf/trademarks/">PSF Trademark Usage Policy<i
+                            class="bi bi-link"></i></a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://angular.io/presskit.html">Angular Logo <i class="bi bi-link"></i></a>
+                    <span class="text-white"> by Google is
+                        licensed under </span>
+                    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 <i
+                            class="bi bi-link"></i></a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://github.com/vuejs/art">Vue Logo <i class="bi bi-link"></i></a>
+                    <span class="text-white"> by Evan You is licensed under </span>
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0 <i
+                            class="bi bi-link"></i></a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/wiki/File:Blazor.png">Blazor Logo <i
+                            class="bi bi-link"></i></a>
+                    <span class="text-white"> by dotnet is licensed under</span>
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0<i
+                            class="bi bi-link"></i></a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/w/index.php?curid=90587630">.NET Logo <i
+                            class="bi bi-link"></i></a>
+                    <span class="text-white"> by Microsoft is licensed under</span>
+                    <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0<i
+                            class="bi bi-link"></i></a>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <span class="text-white">Azure DevOps Logo is a derivative work by <i>me</i>, and is based on the
+                        public domain Azure DevOps logo
+                        by Microsoft</span>
+                </li>
+                <li class="list-group-item body-bg-color-dark">
+                    <a href="https://commons.wikimedia.org/wiki/File:Microsoft_Azure_Logo.svg">Azure Logo</a>
+                    <span class="text-white"> by Microsoft is licensed under public domain</span>
+                </li>
+            </ul>
         </div>
 
-        <br>
-
-        <div class="row">
-            <span>
-                -
-                <a href="https://angular.io/presskit.html">Angular Logo <i class="bi bi-link"></i></a> by Google is
-                licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0 <i
-                        class="bi bi-link"></i></a>
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://github.com/vuejs/art">Vue Logo <i class="bi bi-link"></i></a> by Evan You is
-                licensed under <a href="https://creativecommons.org/licenses/by/4.0/deed.en">CC BY 4.0 <i
-                        class="bi bi-link"></i></a>
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:Blazor.png">Blazor Logo <i class="bi bi-link"></i></a>
-                by dotnet is
-                licensed under <a href="https://creativecommons.org/publicdomain/zero/1.0/deed.en">CC0 1.0<i
-                        class="bi bi-link"></i></a>
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                .NET Core Logo is a derivative work by <i>me</i>, and is based on the unofficial public domain .NET Core
-                logo
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                .NET Framework Logo is a derivative work by <i>me</i>, and is based on the unofficial public domain .NET
-                Framework logo
-            </span>
-        </div>
-
-        <br>
-
-        <div class="row">
-            <span>
-                -
-                Azure DevOps Logo is a derivative work by <i>me</i>, and is based on the public domain Azure DevOps logo
-                by Microsoft
-            </span>
-        </div>
-        <div class="row">
-            <span>
-                -
-                <a href="https://commons.wikimedia.org/wiki/File:Microsoft_Azure_Logo.svg">Azure Logo</a> by Microsoft is
-                licensed under public domain
-            </span>
-        </div>
     </div>
 
     <!-- 
