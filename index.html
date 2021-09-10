@@ -35,7 +35,7 @@
 
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="150" tabindex="0">
 
     <!-- 
     
@@ -53,11 +53,12 @@
 
                 </a>
                 <a class="navbar-brand d-none d-md-inline-block nav-item fw-bold"
-                    onclick="scrollToElement('jumbotron', 'top')">
+                    onclick="scrollToElement('jumbotron', 'top')" href="#jumbotron">
                     <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
                     gridlocdev</a>
-                <a class="navbar-brand-two mx-auto d-md-none d-inline-block" onclick="scrollToElement('jumbotron', 'top')"
-                    data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show">
+                <a class="navbar-brand-two mx-auto d-md-none d-inline-block"
+                    onclick="scrollToElement('jumbotron', 'top')" href="#jumbotron" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">
                     <img src="./assets/images/logo.svg" width="48" height="48" alt="logo">
                 </a>
                 <div class="w-100 text-right">
@@ -71,23 +72,23 @@
                 <ul class="navbar-nav ms-auto flex-nowrap">
                     <li onclick="scrollToElement('about', 'top');" class="nav-item" data-bs-toggle="collapse"
                         data-bs-target=".navbar-collapse.show">
-                        <a class="nav-item nav-link m-2 menu-item fw-bold">about</a>
-                    </li>
-                    <li onclick="scrollToElement('projects', 'top');" class="nav-item">
-                        <a class="nav-item nav-link m-2 menu-item nav-active fw-bold" data-bs-toggle="collapse"
-                            data-bs-target=".navbar-collapse.show">projects</a>
-                    </li>
-                    <li onclick="scrollToElement('notes', 'top');" class="nav-item" data-bs-toggle="collapse"
-                        data-bs-target=".navbar-collapse.show">
-                        <a class="nav-item nav-link m-2 menu-item fw-bold">notes</a>
+                        <a href="#about" class="nav-item nav-link m-2 menu-item fw-bold">about</a>
                     </li>
                     <li onclick="scrollToElement('skills', 'middle');" class="nav-item" data-bs-toggle="collapse"
                         data-bs-target=".navbar-collapse.show">
-                        <a href="#" class="nav-item nav-link m-2 menu-item fw-bold">skills</a>
+                        <a href="#skills" class="nav-item nav-link m-2 menu-item fw-bold">skills</a>
                     </li>
                     <li onclick="scrollToElement('tools', 'middle');" class="nav-item" data-bs-toggle="collapse"
                         data-bs-target=".navbar-collapse.show">
-                        <a href="#" class="nav-item nav-link m-2 menu-item fw-bold">tools</a>
+                        <a href="#tools" class="nav-item nav-link m-2 menu-item fw-bold">tools</a>
+                    </li>
+                    <li onclick="scrollToElement('projects', 'top');" class="nav-item" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse.show">
+                        <a href="#projects" class="nav-item nav-link m-2 menu-item fw-bold" >projects</a>
+                    </li>
+                    <li onclick="scrollToElement('notes', 'top');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        <a href="#notes" class="nav-item nav-link m-2 menu-item fw-bold">notes</a>
                     </li>
                 </ul>
             </div>
@@ -112,8 +113,8 @@
                         time,
                         feel free to check it out.</p>
                     <div class="py-2 text-center">
-                        <button onclick="scrollToElement('projects', 'top')" class="btn btn-primary btn-lg jumbotron-button"
-                            type="button">sounds
+                        <button onclick="scrollToElement('projects', 'top')"
+                            class="btn btn-primary btn-lg jumbotron-button" type="button">sounds
                             cool</button>
                     </div>
                 </div>
@@ -201,8 +202,8 @@
 
         <!-- Sub-Section: Tools -->
 
-        <div class="px-md-5 my-4 text-white rounded-3">
-            <div id="tools" class="container-fluid">
+        <div id="tools" class="px-md-5 my-4 text-white rounded-3">
+            <div class="container-fluid">
 
                 <!-- Sub-Sub-Section: Programming Languages -->
 

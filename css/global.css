@@ -1,6 +1,7 @@
 body {
     background-color: #191919;
     font: 100% Helvetica Neue, sans-serif;
+    position: relative;
 }
 
 .shadowed {

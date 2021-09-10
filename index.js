@@ -20,7 +20,6 @@ function scrollToElement(elementID, position) {
             y = absoluteElementTop - (window.innerHeight / 2)
             break
     }
-    console.log(y)
     window.scrollTo({ top: y, behavior: 'smooth' })
 
 }
