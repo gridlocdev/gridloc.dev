@@ -4,6 +4,9 @@ import notes from "./notes.data.js"
 loadProjects()
 loadNotes()
 
+/** 
+ * @summary For each project in data object 'projects', builds an HTML string and injects it into the appropriate page section
+*/
 function loadProjects() {
     let projectsRootElement = document.getElementById("projects-inject-root")
 
@@ -15,7 +18,7 @@ function loadProjects() {
                         <i class="bi ${project.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title"><strong>${project.name}</strong></h4>
+                        <h5 class="card-title fw-bold">${project.name}</h5>
                         <p class="card-text">${project.description}</p>
                         <p class="card-text"><small class="text-muted">${project.technologies}</small></p>
                     </div>
@@ -43,6 +46,9 @@ function loadProjects() {
     });
 }
 
+/** 
+ * @summary For each project in data object 'projects', builds an HTML string and injects it into the appropriate page section
+*/
 function loadNotes() {
     let notesRootElement = document.getElementById("notes-inject-root")
 
@@ -54,7 +60,7 @@ function loadNotes() {
                         <i class="bi ${note.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">
-                        <h4 class="card-title"><strong>${note.name}</strong></h4>
+                        <h5 class="card-title fw-bold">${note.name}</h5>
                         <p class="card-text">${note.description}</p>
                         <p class="card-text"><small class="text-muted">${note.technologies}</small></p>
                     </div>

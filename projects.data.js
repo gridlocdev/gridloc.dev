@@ -1,3 +1,6 @@
+/** 
+ * @summary A JSON Object that represents the set of 'Projects' in my GitHub repository
+*/
 export default [
     {
         "name": "Text Adventure",
