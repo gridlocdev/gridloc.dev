@@ -44,7 +44,7 @@ export default [
     },
     {
         "name": "Portfolio (this site)",
-        "description": "A website that lists all of my projects. Clicking the website link gets you recursion woo!",
+        "description": "The website that you're currently on! A portfolio website that gives a list of the projects, notes, and other aspects about myself as a developer.",
         "technologies": "Vanilla JS, Bootstrap",
         "bootstrapIcon": "bi-newspaper",
         "links": {
