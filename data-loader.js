@@ -15,7 +15,7 @@ function loadProjects() {
                         <i class="bi ${project.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"><strong>${project.name}</strong></h5>
+                        <h4 class="card-title"><strong>${project.name}</strong></h4>
                         <p class="card-text">${project.description}</p>
                         <p class="card-text"><small class="text-muted">${project.technologies}</small></p>
                     </div>
@@ -54,7 +54,7 @@ function loadNotes() {
                         <i class="bi ${note.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">
-                        <h5 class="card-title"><strong>${note.name}</strong></h5>
+                        <h4 class="card-title"><strong>${note.name}</strong></h4>
                         <p class="card-text">${note.description}</p>
                         <p class="card-text"><small class="text-muted">${note.technologies}</small></p>
                     </div>
