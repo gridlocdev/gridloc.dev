@@ -72,6 +72,14 @@
             </div>
             <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar">
                 <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li onclick="scrollToElement('projects', 'top');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        <a href="#projects" class="nav-item nav-link m-2 menu-item fw-bold">projects</a>
+                    </li>
+                    <li onclick="scrollToElement('notes', 'top');" class="nav-item" data-bs-toggle="collapse"
+                        data-bs-target=".navbar-collapse.show">
+                        <a href="#notes" class="nav-item nav-link m-2 menu-item fw-bold">notes</a>
+                    </li>
                     <li onclick="scrollToElement('about', 'top');" class="nav-item" data-bs-toggle="collapse"
                         data-bs-target=".navbar-collapse.show">
                         <a href="#about" class="nav-item nav-link m-2 menu-item fw-bold">about</a>
@@ -83,14 +91,6 @@
                     <li onclick="scrollToElement('tools', 'middle');" class="nav-item" data-bs-toggle="collapse"
                         data-bs-target=".navbar-collapse.show">
                         <a href="#tools" class="nav-item nav-link m-2 menu-item fw-bold">tools</a>
-                    </li>
-                    <li onclick="scrollToElement('projects', 'top');" class="nav-item" data-bs-toggle="collapse"
-                        data-bs-target=".navbar-collapse.show">
-                        <a href="#projects" class="nav-item nav-link m-2 menu-item fw-bold">projects</a>
-                    </li>
-                    <li onclick="scrollToElement('notes', 'top');" class="nav-item" data-bs-toggle="collapse"
-                        data-bs-target=".navbar-collapse.show">
-                        <a href="#notes" class="nav-item nav-link m-2 menu-item fw-bold">notes</a>
                     </li>
                 </ul>
             </div>
@@ -122,6 +122,37 @@
                     <img class="mx-auto align-middle" src="./assets/images/gridlocdev-fancy-logo-popout.svg"
                         width="100%" height="312px" alt="logo">
                 </div>
+            </div>
+        </div>
+    </div>
+    <div id="projects" class="p-4 p-sm-5 text-white rounded-3">
+        <div class="row text-center">
+            <h1 class="fw-bold">projects</h1>
+        </div>
+        <div class="container-fluid pt-5 col-lg-10">
+            <div id="projects-inject-root" class="row px-md-5">
+                <!-- Project elements here are injected by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- 
+    
+        Section: Notes 
+    
+    -->
+
+    <div id="notes" class="p-4 p-sm-5 mb-4 text-white rounded-3 bg-dark">
+        <div class="row text-center">
+            <h1 class="fw-bold">notes</h1>
+        </div>
+        <div class="row text-center pt-4">
+            <span class="text-muted">Here is a collection of notes that I wrote while learning about various industry
+                related topics.</span>
+        </div>
+        <div class="container-fluid pt-5 col-lg-10">
+            <div id="notes-inject-root" class="row px-md-5">
+                <!-- Notes elements here are injected by JavaScript -->
             </div>
         </div>
     </div>
@@ -268,45 +299,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!-- 
-    
-        Section: Projects 
-    
-    -->
-
-    <div id="projects" class="p-4 p-sm-5 text-white rounded-3">
-        <div class="row text-center">
-            <h1 class="fw-bold">projects</h1>
-        </div>
-        <div class="container-fluid pt-5 col-lg-10">
-            <div id="projects-inject-root" class="row px-md-5">
-                <!-- Project elements here are injected by JavaScript -->
-            </div>
-        </div>
-    </div>
-
-    <!-- 
-    
-        Section: Notes 
-    
-    -->
-
-    <div id="notes" class="p-4 p-sm-5 mb-4 text-white rounded-3 bg-dark">
-        <div class="row text-center">
-            <h1 class="fw-bold">notes</h1>
-        </div>
-        <div class="row text-center pt-4">
-            <span class="text-muted">Here is a collection of notes that I wrote while learning about various industry
-                related topics.</span>
-        </div>
-        <div class="container-fluid pt-5 col-lg-10">
-            <div id="notes-inject-root" class="row px-md-5">
-                <!-- Notes elements here are injected by JavaScript -->
             </div>
         </div>
     </div>
