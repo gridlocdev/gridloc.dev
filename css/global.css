@@ -19,8 +19,8 @@ body {
     height: 100%;
 }
 
-.body-bg-color-dark {
-    background-color: #181818;
+.bs-bg-dark {
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity));
 }
 
 .navbar-shadowed {
