@@ -23,6 +23,10 @@ body {
     background-color: #181818;
 }
 
+.navbar-shadowed {
+    box-shadow: 0px 3px 5px rgba(17, 17, 17, 0.4);
+}
+
 .nav-item:hover, .nav-item:focus {
     cursor: pointer
 }
