@@ -13,8 +13,8 @@ function loadProjects() {
     projects.forEach(project => {
         projectsRootElement.innerHTML += `
             <div class="col col-lg-4 col-md-6 col-sm-12 pb-4">
-                <div class="card shadowed full-height p-3 mb-3 bg-dark">
-                    <div class="mx-auto p-3 outlined bg-dark card-icon-bi">
+                <div class="card shadowed full-height p-5 p-sm-4 p-md-3 mb-3 bg-dark">
+                    <div class="mx-auto outlined bg-dark card-icon-bi">
                         <i class="bi ${project.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">
@@ -55,8 +55,8 @@ function loadNotes() {
     notes.forEach(note => {
         notesRootElement.innerHTML += `
             <div class="col col-lg-4 col-md-6 col-sm-12 pb-4">
-                <div class="card shadowed full-height p-3 mb-3 bg-dark">
-                    <div class="mx-auto p-3 outlined bg-dark card-icon-bi">
+                <div class="card shadowed full-height p-5 p-sm-4 p-md-3 mb-3 bg-dark">
+                    <div class="mx-auto outlined bg-dark card-icon-bi">
                         <i class="bi ${note.bootstrapIcon}"></i>
                     </div>
                     <div class="card-body">

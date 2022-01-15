@@ -25,14 +25,15 @@
     <script type="module" src="data-loader.js"></script>
     <script type="text/javascript" src="index.js"></script>
 
-    <!-- <script>
+    <script>
+        /*
         **DEBUG CODE**: This script is for scrolling to a specific position 
         on the page each time VSCode's Live Server extension hot reloads.
-
+        */
         window.onload = function () {
-            scrollToElement('about', 'top')
+            scrollToElement('projects', 'top')
         }
-    </script> -->
+    </script>
 
 </head>
 
@@ -278,11 +279,11 @@
     
     -->
 
-    <div id="projects" class="p-5 text-white rounded-3">
+    <div id="projects" class="p-4 p-sm-5 text-white rounded-3">
         <div class="row text-center">
             <h1 class="fw-bold">projects</h1>
         </div>
-        <div class="container-fluid pt-5">
+        <div class="container-fluid pt-5 col-lg-10">
             <div id="projects-inject-root" class="row px-md-5">
                 <!-- Project elements here are injected by JavaScript -->
             </div>
@@ -295,7 +296,7 @@
     
     -->
 
-    <div id="notes" class="p-5 mb-4 text-white rounded-3 bg-dark">
+    <div id="notes" class="p-4 p-sm-5 mb-4 text-white rounded-3 bg-dark">
         <div class="row text-center">
             <h1 class="fw-bold">notes</h1>
         </div>
@@ -303,14 +304,14 @@
             <span class="text-muted">Here is a collection of notes that I wrote while learning about various industry
                 related topics.</span>
         </div>
-        <div class="container-fluid pt-5">
+        <div class="container-fluid pt-5 col-lg-10">
             <div id="notes-inject-root" class="row px-md-5">
                 <!-- Notes elements here are injected by JavaScript -->
             </div>
         </div>
     </div>
 
-    <div id="attributions" class="p-5 mb-4 text-white rounded-3">
+    <div id="attributions" class="p-4 p-sm-5 mb-4 text-white rounded-3">
         <div class="row">
             <span class="text-white text-center px-md-5">
                 Attributions - All third-party logos present in this website are the Intellectual Property of their
