@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(#35ff24, #0e8603);
+  background: -webkit-linear-gradient(#21ad00, #146400);
   background-clip: content-box;
 }
 
