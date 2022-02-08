@@ -33,7 +33,7 @@ body {
 }
 
 .jumbotron-header {
-  background: -webkit-linear-gradient(#35ff24, #0e8603);
+  background: -webkit-linear-gradient(#01cca8, #00aa8c);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -42,7 +42,7 @@ body {
 .jumbotron-button {
   color: white;
   font-weight: bold;
-  background-color: #25bb00;
+  background-color: #008c73;
   border: 0;
   border-radius: 500px;
 }
@@ -50,7 +50,7 @@ body {
 .jumbotron-button:hover,
 .jumbotron-button:focus {
   outline: 0;
-  background-color: #1c8a00;
+  background-color: #00aa8c;
   box-shadow: 0px 5px 10px #111;
 }
 
@@ -82,7 +82,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(#21ad00, #146400);
+  background: -webkit-linear-gradient(#00a487, #008c73);
   background-clip: content-box;
 }
 
