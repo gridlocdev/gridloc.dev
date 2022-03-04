@@ -11,7 +11,7 @@ export default [
   },
   {
     name: "Blog",
-    description: "A website that shows some guides about things I figure out while building things.",
+    description: "A website where I put short-form guides for things I can't find on the Internet.",
     technologies: "Listed",
     bootstrapIcon: "bi-journal-code",
     website: "https://listed.to/@gridlocdev",
