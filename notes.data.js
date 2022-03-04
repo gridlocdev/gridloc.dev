@@ -3,24 +3,17 @@
  */
 export default [
   {
-    name: "Networking",
-    description: "My notes about computer networking",
-    bootstrapIcon: "bi-hdd-network",
-    technologies: "Markdown, GitHub Pages",
-    website: "https://gridlocdev.github.io/networking",
+    name: "Developer Notes",
+    description: "Notes about miscellaneous industry-related topics",
+    technologies: "Built with my Static Site Generator",
+    bootstrapIcon: "bi-pencil-square",
+    website: "https://notes.gridloc.dev",
   },
   {
-    name: "Security",
-    description: "My notes about security on the Internet",
-    bootstrapIcon: "bi-shield-lock",
-    technologies: "Markdown, GitHub Pages",
-    website: "https://gridlocdev.github.io/security",
-  },
-  {
-    name: "DevOps",
-    description: "My miscellaneous notes about the state of DevOps in 2021",
+    name: "Blog",
+    description: "A website that shows some guides about things I figure out while building things.",
+    technologies: "Listed",
     bootstrapIcon: "bi-journal-code",
-    technologies: "Markdown, GitHub Pages",
-    website: "https://gridlocdev.github.io/devops",
+    website: "https://listed.to/@gridlocdev",
   },
 ];

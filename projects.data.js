@@ -14,18 +14,27 @@ export default [
   },
   {
     name: "Drum Machine",
-    description: "A drum machine that you can play with the keyboard.",
+    description: "A drum machine that you can play with the keyboard",
     technologies: "Web Components, Vanilla CSS",
     bootstrapIcon: "bi-file-music",
     links: {
       repository: "https://github.com/gridlocdev/drum-machine",
-      website: "https://gridloc.dev/drum-machine",
+      website: "https://drum-machine.gridloc.dev",
+    },
+  },
+  {
+    name: "Static Site Generator",
+    description: "My custom-built Static Site Generator",
+    technologies: "C#, .NET 6, Markdown, Markdig",
+    bootstrapIcon: "bi-robot",
+    links: {
+      repository: "https://github.com/gridlocdev/gridlocdev-devnotes-ssg",
     },
   },
   {
     name: "Cube Slide",
     description:
-      "A platformer video game with no jumping, where a cube slides around obstacles to make its way to the goal.",
+      "A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal",
     technologies: "Unity (Game Engine)",
     bootstrapIcon: "bi-box",
     links: {
@@ -35,7 +44,7 @@ export default [
   },
   {
     name: "Chess Clock",
-    description: "A web-based clock for timing games of Chess.",
+    description: "A web-based clock application for timing games of Chess",
     technologies: "Angular, Angular Material",
     bootstrapIcon: "bi-stopwatch",
     links: {
