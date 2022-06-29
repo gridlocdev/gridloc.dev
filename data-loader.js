@@ -1,8 +1,8 @@
 import projects from "./projects.data.js";
-import notes from "./notes.data.js";
+import articles from "./articles.data.js";
 
 loadProjects();
-loadNotes();
+loadArticles();
 
 /**
  * @summary For each project in data object 'projects', builds an HTML string and injects it into the appropriate page section
@@ -63,11 +63,11 @@ function loadProjects() {
 /**
  * @summary For each project in data object 'projects', builds an HTML string and injects it into the appropriate page section
  */
-function loadNotes() {
-  let notesRootElement = document.getElementById("notes-inject-root");
+function loadArticles() {
+  let articlesRootElement = document.getElementById("articles-inject-root");
 
-  notes.forEach((note) => {
-    notesRootElement.innerHTML += /* html */ `
+  articles.forEach((note) => {
+    articlesRootElement.innerHTML += /* html */ `
             <div class="col col-lg-6 col-md-6 col-sm-12 pb-4">
                 <div class="card shadowed full-height p-5 p-sm-4 p-md-3 mb-3 bg-dark">
                     <div class="mx-auto outlined bg-dark card-icon-bi">

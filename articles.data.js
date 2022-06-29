@@ -1,5 +1,5 @@
 /**
- * @summary A JSON Object that represents the set of 'Notes' in my GitHub repository
+ * @summary A JSON Object that represents the set of 'Articles' in my GitHub repository
  */
 export default [
   {
