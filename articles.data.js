@@ -11,9 +11,23 @@ export default [
   },
   {
     name: "Blog",
-    description: "A website where I put short-form guides for things I can't find on the Internet.",
+    description: "A website where I put short-form guides for things I can't find on the Internet",
     technologies: "Listed",
     bootstrapIcon: "bi-journal-code",
     website: "https://listed.to/@gridlocdev",
+  },
+  {
+    name: "C# Developer Roadmap",
+    description: "A beginner's roadmap of concepts to learn the C# programming language",
+    technologies: "Markdown, diagrams.net",
+    bootstrapIcon: "bi-diagram-3",
+    website: "https://gridlocdev.github.io/lua-beginners/guide",
+  },
+  {
+    name: "Lua Tutorial",
+    description: "An introductory article for the Lua programming language",
+    technologies: "Markdown, GitHub Pages",
+    bootstrapIcon: "bi-moon-stars",
+    website: "https://gridlocdev.github.io/lua-beginners-guide",
   },
 ];
