@@ -21,7 +21,7 @@ export default [
     description: "A beginner's roadmap of concepts to learn the C# programming language",
     technologies: "Markdown, diagrams.net",
     bootstrapIcon: "bi-diagram-3",
-    website: "https://gridlocdev.github.io/lua-beginners/guide",
+    website: "https://github.com/gridlocdev/csharp-learning-roadmap",
   },
   {
     name: "Lua Tutorial",

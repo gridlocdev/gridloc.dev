@@ -61,7 +61,7 @@ function loadProjects() {
 }
 
 /**
- * @summary For each project in data object 'projects', builds an HTML string and injects it into the appropriate page section
+ * @summary For each project in data object 'articles', builds an HTML string and injects it into the appropriate page section
  */
 function loadArticles() {
   let articlesRootElement = document.getElementById("articles-inject-root");
