@@ -28,7 +28,7 @@ export default [
     technologies: "C#, .NET 6, Markdown, Markdig",
     bootstrapIcon: "bi-robot",
     links: {
-      repository: "https://github.com/gridlocdev/gridlocdev-devnotes-ssg",
+      repository: "https://github.com/gridlocdev/custom-static-site-generator",
     },
   },
   {
