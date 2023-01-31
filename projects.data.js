@@ -3,13 +3,12 @@
  */
 export default [
   {
-    name: "Text Adventure",
-    description: "Create, play, import or export a text adventure game story.",
-    technologies: "Vue 2, Vuetify, VueX",
+    name: "Username Generator",
+    description: "A set of applications for creating randomly-generated usernames",
+    technologies: "C#, .NET 6, Terminal.GUI, Blazor WebAssembly, Avalonia UI",
     bootstrapIcon: "bi-textarea-t",
     links: {
-      repository: "https://github.com/gridlocdev/text-adventure",
-      website: "https://gridlocdev.github.io/text-adventure",
+      repository: "https://github.com/gridlocdev/UsernameGenerator",
     },
   },
   {
@@ -53,9 +52,19 @@ export default [
     },
   },
   {
+    name: "Text Adventure",
+    description: "Create, play, import or export a text adventure game story.",
+    technologies: "Vue 2, Vuetify, VueX",
+    bootstrapIcon: "bi-book-half",
+    links: {
+      repository: "https://github.com/gridlocdev/text-adventure",
+      website: "https://gridlocdev.github.io/text-adventure",
+    },
+  },
+  {
     name: "Portfolio (this site)",
     description:
-      "The website that you're currently on! A portfolio website that gives a list of the projects, articles, and other aspects about myself as a developer.",
+      "The website that you're currently on! A portfolio website that gives a list of the projects, articles, and other details about myself as a developer.",
     technologies: "Vanilla JS, Bootstrap",
     bootstrapIcon: "bi-newspaper",
     links: {
