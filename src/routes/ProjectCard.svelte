@@ -1,8 +1,10 @@
 <script>
 	export let title;
 	export let description;
+	export let technologies;
 	export let source;
 	export let website;
+	export let screenshot;
 </script>
 
 <article class="flex flex-col gap-5 rounded-2xl bg-background p-10">
@@ -29,5 +31,10 @@
 			</a>
 		{/if}
 	</div>
-	<p class="italic">{description}</p>
+	<p class="text-xl">{description}</p>
+	{#if screenshot}
+		<img src={screenshot} class="w-full" />
+	{/if}
+	<span class="italic opacity-75">Built with: {technologies}</span>
+
 </article>
