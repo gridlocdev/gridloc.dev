@@ -4,8 +4,8 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'icon-link': "url('/link.svg')",
-				'icon-github': "url('/github-mark-white.svg')",
+				'icon-link': "url('/icons/link.svg')",
+				'icon-github': "url('/icons/github-mark-white.svg')",
 			},
 		},
 		colors: {
