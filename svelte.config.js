@@ -16,13 +16,13 @@ const config = {
 			assets: 'build',
 			fallback: undefined,
 			precompress: false,
-			strict: true
+			strict: true,
 		}),
 		paths: {
-			base: dev ? '' : process.env.BASE_PATH
-		}
+			base: dev ? '' : process.env.BASE_PATH,
+		},
 	},
-	preprocess: vitePreprocess()
+	preprocess: vitePreprocess(),
 };
 
 export default config;
