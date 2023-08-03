@@ -3,10 +3,6 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
 		extend: {
-			backgroundImage: {
-				'icon-link': "url('/icons/link.svg')",
-				'icon-github': "url('/icons/github-mark-white.svg')",
-			},
 			fontFamily: {
 				sora: ['Sora', 'sans-serif'],
 			},
