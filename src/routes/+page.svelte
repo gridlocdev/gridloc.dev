@@ -18,7 +18,7 @@
 	out:fly={{ x: 5, duration: 500 }}
 >
 	<Jumbotron />
-	<h2 id="projects" class="m-5 text-center text-4xl font-bold">Projects</h2>
+	<h2 id="projects" class="mt-10 p-10 text-center text-4xl font-bold">Projects</h2>
 	<div class="grid md:grid-cols-1 md:gap-5 lg:grid-cols-2 lg:gap-10">
 		<ProjectCard
 			title={'Username Generator'}
@@ -86,8 +86,8 @@
 			screenshot={null}
 		/>
 	</div>
-	<h2 id="articles">Articles</h2>
-	<div class="flex flex-col gap-5">
+	<h2 id="articles" class="mt-10 p-10 text-center text-4xl font-bold">Articles</h2>
+	<div class="grid grid-cols-3 gap-10">
 		<ArticleCard
 			title={'Developer Notes'}
 			description={'Notes about miscellaneous industry-related topics'}
