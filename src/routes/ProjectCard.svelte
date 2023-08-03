@@ -7,7 +7,7 @@
 	export let screenshot;
 </script>
 
-<article class="flex flex-col gap-5 rounded-2xl bg-background p-10">
+<article class="flex flex-col gap-5 rounded-md shadow-2xl bg-text/[.1] p-10 lg:hover:scale-105 lg:transition lg:duration-300">
 	<div class="flex gap-5">
 		<h2 class="text-2xl font-bold">{title}</h2>
 		{#if source}

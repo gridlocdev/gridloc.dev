@@ -4,10 +4,14 @@
 	import Jumbotron from './Jumbotron.svelte';
 
 	import { fly } from 'svelte/transition';
+	import NavBar from './NavBar.svelte';
 </script>
 
+<header>
+	<NavBar />
+</header>
 <main
-	class="mx-[10dvw] py-10"
+	class="py-10"
 	in:fly={{ x: -10, duration: 500, delay: 500 }}
 	out:fly={{ x: 5, duration: 500 }}
 >
