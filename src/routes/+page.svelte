@@ -1,7 +1,7 @@
 <script lang="ts">
 	import ProjectCard from './ProjectCard.svelte';
 	import ArticleCard from './ArticleCard.svelte';
-	import Jumbotron from './Jumbotron.svelte';
+	import Jumbotron from './Hero.svelte';
 	import NavBar from './NavBar.svelte';
 
 	import { fly } from 'svelte/transition';
