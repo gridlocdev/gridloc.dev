@@ -33,7 +33,7 @@
 	</div>
 	<p class="text-xl">{description}</p>
 	{#if screenshot}
-		<img src={screenshot} class="w-full" />
+		<img src={screenshot} class="w-full" alt='(screenshot of {title})'/>
 	{/if}
 	<span class="italic opacity-75">Built with: {technologies}</span>
 
