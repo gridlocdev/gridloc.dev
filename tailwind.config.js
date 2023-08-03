@@ -8,7 +8,7 @@ export default {
 				'icon-github': "url('/icons/github-mark-white.svg')",
 			},
 			fontFamily: {
-				sora: ["Sora", "sans-serif"],
+				sora: ['Sora', 'sans-serif'],
 			},
 		},
 		colors: {

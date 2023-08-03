@@ -7,7 +7,9 @@
 	export let screenshot;
 </script>
 
-<article class="flex flex-col gap-5 rounded-md shadow-2xl bg-text/[.1] p-10 lg:hover:scale-105 lg:transition lg:duration-300">
+<article
+	class="flex flex-col gap-5 rounded-md bg-text/[.1] p-10 shadow-2xl lg:transition lg:duration-300 lg:hover:scale-105"
+>
 	<div class="flex gap-5">
 		<h2 class="text-2xl font-bold">{title}</h2>
 		{#if source}
@@ -33,8 +35,7 @@
 	</div>
 	<p class="text-xl">{description}</p>
 	{#if screenshot}
-		<img src={screenshot} class="w-full" alt='(screenshot of {title})'/>
+		<img src={screenshot} class="w-full" alt="(screenshot of {title})" />
 	{/if}
 	<span class="italic opacity-75">Built with: {technologies}</span>
-
 </article>

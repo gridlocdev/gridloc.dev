@@ -3,6 +3,6 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: Sora;
-    src: url("/fonts/Sora.ttf")
+	font-family: Sora;
+	src: url('/fonts/Sora.ttf');
 }
