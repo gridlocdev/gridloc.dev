@@ -8,5 +8,5 @@
 	<h2 class="text-2xl transition hover:cursor-pointer hover:text-primary hover:underline">
 		<a href={website} target="_blank">{title}</a>
 	</h2>
-	<p class="opacity-75 pt-2">{description}</p>
+	<p class="pt-2 opacity-75">{description}</p>
 </article>
