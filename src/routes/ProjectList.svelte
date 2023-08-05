@@ -42,7 +42,6 @@
 		website="https://gridlocdev.github.io/cube-slide"
 		screenshot="/screenshots/cube-slide.png"
 	/>
-	<!-- TODO: Create image for Chess Clock -->
 	<ProjectListItem
 		title="Chess Clock"
 		description="A web-based clock application for timing games of Chess"
@@ -52,7 +51,6 @@
 		website="https://gridlocdev.github.io/chess-clock"
 		screenshot="/screenshots/chess-clock.png"
 	/>
-	<!-- TODO: Create image for Text Adventure -->
 	<ProjectListItem
 		title="Text Adventure"
 		description="Create, play, import or export a text adventure game story."
