@@ -5,7 +5,7 @@
 </script>
 
 <h2 id="projects" class="mt-10 p-10 text-center text-3xl font-bold">Projects</h2>
-<div class="grid gap-y-10 md:grid-cols-1 md:gap-5 lg:grid-cols-2 lg:gap-10">
+<div class="grid gap-y-10 grid-cols-1 md:grid-cols-2 md:gap-5 lg:gap-10">
 	<ProjectListItem
 		title="Username Generator"
 		description="A set of applications for creating randomly-generated usernames"
