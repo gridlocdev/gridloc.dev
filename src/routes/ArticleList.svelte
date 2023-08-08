@@ -2,8 +2,8 @@
 	import ArticleCard from './ArticleListItem.svelte';
 </script>
 
-<h2 id="articles" class="mt-10 p-10 text-center text-4xl font-bold">Articles</h2>
-<div class="mx-10 grid grid-cols-1 gap-10 md:text-start lg:grid-cols-3">
+<h2 id="articles" class="mt-12 p-12 text-center text-4xl font-bold">Articles</h2>
+<div class="mx-10 grid grid-cols-1 gap-8 md:text-start lg:grid-cols-3">
 	<ArticleCard
 		title="Developer Notes"
 		description="Notes about miscellaneous industry-related topics"

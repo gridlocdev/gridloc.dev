@@ -19,18 +19,18 @@
 		{/if}
 		<span class="text-sm italic opacity-75">Built with: {technologies}</span>
 	</div>
-	<div class="mt-5 flex flex-wrap place-content-around gap-5">
+	<div class="mt-4 flex flex-wrap place-content-around gap-4">
 		{#if source}
 			<a
 				href={source}
 				target="_blank"
-				class="bg-transparent flex w-fit cursor-pointer items-center gap-3 rounded-full border-2 border-accent px-9 py-3 text-base font-bold transition hover:scale-95 hover:opacity-60"
+				class="bg-transparent flex w-fit cursor-pointer items-center gap-3 rounded-full border-2 border-accent px-8 py-3 text-base font-bold transition hover:scale-95 hover:opacity-60"
 			>
 				<span>View Source</span>
 				<img
 					src="/icons/github-mark.svg"
 					alt="GitHub icon"
-					class="inline h-7 w-7 justify-self-center"
+					class="inline h-6 w-6 justify-self-center"
 				/>
 			</a>
 		{/if}
@@ -38,17 +38,17 @@
 			<a
 				href={website}
 				target="_blank"
-				class="flex w-fit cursor-pointer items-center gap-3 rounded-full bg-accent bg-gradient-to-tl from-secondary px-9 py-3 text-base font-bold brightness-125 transition hover:scale-95 hover:brightness-100"
+				class="flex w-fit cursor-pointer items-center gap-3 rounded-full bg-accent bg-gradient-to-tl from-secondary px-8 py-3 text-base font-bold brightness-125 transition hover:scale-95 hover:brightness-100"
 			>
 				{#if projectType === 'App'}
 					<span>Open App</span>
-					<img src="/icons/link.svg" alt="link icon" class="h-7 w-7" />
+					<img src="/icons/link.svg" alt="link icon" class="h-6 w-6" />
 				{:else if projectType === 'Tool'}
 					<span>Visit Website</span>
-					<img src="/icons/link.svg" alt="link icon" class="h-7 w-7" />
+					<img src="/icons/link.svg" alt="link icon" class="h-6 w-6" />
 				{:else if projectType === 'Game'}
 					<span>Play</span>
-					<img src="/icons/play.svg" alt="play icon" class="h-7 w-7" />
+					<img src="/icons/play.svg" alt="play icon" class="h-6 w-6" />
 				{/if}
 			</a>
 		{/if}
