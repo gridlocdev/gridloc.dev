@@ -6,11 +6,9 @@
 
 <article class="group transition hover:scale-105 hover:cursor-pointer">
 	<a href={website} target="_blank">
-		<h2
-			class="text-2xl transition group-hover:text-primary"
-		>
+		<h2 class="text-xl transition group-hover:text-primary">
 			{title}
 		</h2>
-		<p class="pt-2 opacity-75">{description}</p>
+		<p class="pt-2 text-base opacity-75">{description}</p>
 	</a>
 </article>

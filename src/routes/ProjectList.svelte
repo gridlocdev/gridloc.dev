@@ -4,8 +4,8 @@
 	// valid ProjectType values: 'App', 'Tool', 'Game'
 </script>
 
-<h2 id="projects" class="mt-10 p-10 text-center text-4xl font-bold">Projects</h2>
-<div class="grid md:grid-cols-1 md:gap-5 lg:grid-cols-2 lg:gap-10">
+<h2 id="projects" class="mt-10 p-10 text-center text-3xl font-bold">Projects</h2>
+<div class="grid gap-y-10 md:grid-cols-1 md:gap-5 lg:grid-cols-2 lg:gap-10">
 	<ProjectListItem
 		title="Username Generator"
 		description="A set of applications for creating randomly-generated usernames"
