@@ -1,23 +1,17 @@
 <h2 id="about" class="mt-10 p-5 text-center text-4xl font-bold">About Me</h2>
 <section class="flex flex-col gap-2 px-10 opacity-75">
+	<b>Who am I?</b>
 	<p>
-		I've been working as a professional .NET software engineer since 2019 for a large-scale
-		organization, and have experience in most areas of the web technology stack.
+		I am a video game player, music listener, anime watcher, and professionally have been a software
+		engineer writing .NET stuff since 2019.
 	</p>
-	<ul class="list-[square] pl-10">
-		<li>Building server-side web applications</li>
-		<li>Creating CI/CD pipelines</li>
-		<li>Managing Windows servers with IIS</li>
-		<li>Architecting relational databases</li>
-	</ul>
+	<b>My background</b>
 	<p>
-		As a nerd, I have always enjoyed the creative process of putting ideas into practice in a way
-		that is either valuable or just plain fun, and I've found that software is the perfect medium
-		for that type of thing.
+		I've always loved the process of creating things; when I was younger, I would spend countless
+		hours in the <i>Halo</i> video game's level editors creating maps to play with friends.
 	</p>
-	<p />
+	<b>What's on this site?</b>
 	<p>
-		I look forward to the future of the medium, and seeing what types of cool opportunities present
-		themselves.
+		This site has the projects and other things that I've built in my spare time, which have been helpful for me to improve my programming, writing, and planning skills.
 	</p>
 </section>
