@@ -1,4 +1,6 @@
 <script>
+	import { base } from '$app/paths';
+
 	export let title;
 	export let description;
 	export let technologies;
@@ -15,7 +17,7 @@
 	</div>
 	<div class="flex flex-col items-center gap-2">
 		{#if screenshot}
-			<img src={screenshot} class="w-fit" alt="(screenshot of {title})" />
+			<img src="{base}{screenshot}" class="w-fit" alt="(screenshot of {title})" />
 		{/if}
 		<span class="text-sm italic opacity-75">Built with: {technologies}</span>
 	</div>
@@ -28,7 +30,7 @@
 			>
 				<span>View Source</span>
 				<img
-					src="/icons/github-mark.svg"
+					src="{base}/icons/github-mark.svg"
 					alt="GitHub icon"
 					class="inline h-6 w-6 justify-self-center"
 				/>
@@ -42,13 +44,13 @@
 			>
 				{#if projectType === 'App'}
 					<span>Open App</span>
-					<img src="/icons/link.svg" alt="link icon" class="h-6 w-6" />
+					<img src="{base}/icons/link.svg" alt="link icon" class="h-6 w-6" />
 				{:else if projectType === 'Tool'}
 					<span>Visit Website</span>
-					<img src="/icons/link.svg" alt="link icon" class="h-6 w-6" />
+					<img src="{base}/icons/link.svg" alt="link icon" class="h-6 w-6" />
 				{:else if projectType === 'Game'}
 					<span>Play</span>
-					<img src="/icons/play.svg" alt="play icon" class="h-6 w-6" />
+					<img src="{base}/icons/play.svg" alt="play icon" class="h-6 w-6" />
 				{/if}
 			</a>
 		{/if}
