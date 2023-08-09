@@ -1,4 +1,4 @@
-import adapter from 'svelte-adapter-azure-swa';
+import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
 const dev = process.argv.includes('dev');
