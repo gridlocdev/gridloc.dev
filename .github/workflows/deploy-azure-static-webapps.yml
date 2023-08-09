@@ -36,16 +36,16 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/gridloc.dev'
+          BASE_PATH: '/'
         run: |
           npm run build
           touch build/.nojekyll
 
       - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v3
         with:
           # this should match the `pages` option in your adapter-static options
-          path: 'build/'
+          path: ${{ env.APP_ARTIFACT_LOCATION }}
 
   deploy_job:
     permissions:
