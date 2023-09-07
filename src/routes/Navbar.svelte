@@ -11,7 +11,7 @@
 		/></a
 	>
 	<section
-		class="fixed bottom-0 z-10 flex w-screen items-center justify-around gap-x-8 p-4 text-center backdrop-blur-3xl md:relative md:bottom-auto md:top-0 md:ml-auto md:w-fit md:p-8 md:backdrop-blur-0"
+		class="fixed bottom-0 left-0 z-10 flex w-screen items-center justify-around gap-x-8 p-4 text-center backdrop-blur-3xl md:relative md:bottom-auto md:top-0 md:ml-auto md:w-fit md:p-8 md:backdrop-blur-0"
 	>
 		<a
 			class="flex flex-col items-center gap-1 transition-opacity hover:opacity-50 md:text-lg"
