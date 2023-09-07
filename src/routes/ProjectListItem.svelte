@@ -10,7 +10,7 @@
 	export let projectType;
 </script>
 
-<article class="flex flex-col justify-between gap-2 rounded-lg bg-text/[.1] p-10 shadow-2xl">
+<article class="flex flex-col justify-between gap-2 rounded-lg bg-text/[.1] p-10 shadow-2xl ring ring-[#ccc] ring-opacity-20">
 	<div class="flex flex-col gap-2">
 		<h2 class="text-xl font-bold">{title}</h2>
 		<p class="text-base">{description}</p>
