@@ -1,13 +1,15 @@
 <script>
 	import { base } from '$app/paths';
 
-	export let title;
-	export let description;
-	export let technologies;
-	export let source;
-	export let website;
-	export let screenshot;
-	export let projectType;
+	let {
+		title,
+		description,
+		technologies,
+		source,
+		website,
+		screenshot,
+		projectType
+	} = $props();
 </script>
 
 <article

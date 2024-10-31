@@ -1,7 +1,5 @@
 <script>
-	export let title;
-	export let description;
-	export let website;
+	let { title, description, website } = $props();
 </script>
 
 <article class="group transition hover:scale-105 hover:cursor-pointer">
