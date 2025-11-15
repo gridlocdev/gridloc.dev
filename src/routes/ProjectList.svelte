@@ -16,6 +16,33 @@
 		screenshot="/screenshots/wor6le.png"
 	/>
 	<ProjectListItem
+	title="Drum Machine"
+	description="A drum machine that you can play with the keyboard"
+	projectType="App"
+	technologies="Web Components, Vanilla CSS"
+	source="https://github.com/gridlocdev/drum-machine"
+	website="https://gridloc.dev/apps/drum-machine"
+	screenshot="/screenshots/drum-machine.png"
+	/>
+	<ProjectListItem
+	title="Cube Slide"
+	description="A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal"
+	technologies="Unity (Game Engine)"
+	projectType="Game"
+	source="https://github.com/gridlocdev/cube-slide"
+	website="https://gridloc.dev/games/cube-slide"
+	screenshot="/screenshots/cube-slide.png"
+	/>
+	<ProjectListItem
+	title="Chess Clock"
+	description="A web-based clock application for timing games of Chess"
+	technologies="Angular, Angular Material"
+	projectType="App"
+	source="https://github.com/gridlocdev/chess-clock"
+	website="https://gridloc.dev/apps/chess-clock"
+	screenshot="/screenshots/chess-clock.png"
+	/>
+	<ProjectListItem
 		title="Username Generator"
 		description="A set of applications for creating randomly-generated usernames"
 		projectType="Tool"
@@ -23,32 +50,5 @@
 		website={null}
 		source="https://github.com/gridlocdev/UsernameGenerator"
 		screenshot="/screenshots/username-generator.png"
-	/>
-	<ProjectListItem
-		title="Drum Machine"
-		description="A drum machine that you can play with the keyboard"
-		projectType="App"
-		technologies="Web Components, Vanilla CSS"
-		source="https://github.com/gridlocdev/drum-machine"
-		website="https://gridloc.dev/apps/drum-machine"
-		screenshot="/screenshots/drum-machine.png"
-	/>
-	<ProjectListItem
-		title="Cube Slide"
-		description="A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal"
-		technologies="Unity (Game Engine)"
-		projectType="Game"
-		source="https://github.com/gridlocdev/cube-slide"
-		website="https://gridloc.dev/games/cube-slide"
-		screenshot="/screenshots/cube-slide.png"
-	/>
-	<ProjectListItem
-		title="Chess Clock"
-		description="A web-based clock application for timing games of Chess"
-		technologies="Angular, Angular Material"
-		projectType="App"
-		source="https://github.com/gridlocdev/chess-clock"
-		website="https://gridloc.dev/apps/chess-clock"
-		screenshot="/screenshots/chess-clock.png"
 	/>
 </div>
