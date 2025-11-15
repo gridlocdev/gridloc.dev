@@ -7,6 +7,15 @@
 <h2 id="projects" class="mt-12 p-12 text-center text-3xl font-bold">Projects</h2>
 <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
 	<ProjectListItem
+		title="wor6le"
+		description="A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more clues for finding the right words."
+		projectType="Game"
+		technologies="Flutter"
+		website="https://gridloc.dev/games/wor6le/"
+		source="https://github.com/gridlocdev/wor6le"
+		screenshot="/screenshots/wor6le.png"
+	/>
+	<ProjectListItem
 		title="Username Generator"
 		description="A set of applications for creating randomly-generated usernames"
 		projectType="Tool"
