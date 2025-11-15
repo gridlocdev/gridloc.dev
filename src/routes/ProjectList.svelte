@@ -42,13 +42,4 @@
 		website="https://gridlocdev.github.io/chess-clock"
 		screenshot="/screenshots/chess-clock.png"
 	/>
-	<ProjectListItem
-		title="Text Adventure"
-		description="Create, play, import or export a text adventure game story."
-		technologies="Vue 2, Vuetify, VueX"
-		projectType="App"
-		source="https://github.com/gridlocdev/text-adventure"
-		website="https://gridlocdev.github.io/text-adventure"
-		screenshot="/screenshots/text-adventure.png"
-	/>
 </div>
