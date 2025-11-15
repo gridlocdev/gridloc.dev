@@ -30,7 +30,7 @@
 		projectType="App"
 		technologies="Web Components, Vanilla CSS"
 		source="https://github.com/gridlocdev/drum-machine"
-		website="https://drum-machine.gridloc.dev"
+		website="https://gridloc.dev/apps/drum-machine"
 		screenshot="/screenshots/drum-machine.png"
 	/>
 	<ProjectListItem
@@ -39,7 +39,7 @@
 		technologies="Unity (Game Engine)"
 		projectType="Game"
 		source="https://github.com/gridlocdev/cube-slide"
-		website="https://gridlocdev.github.io/cube-slide"
+		website="https://gridloc.dev/games/cube-slide"
 		screenshot="/screenshots/cube-slide.png"
 	/>
 	<ProjectListItem
@@ -48,7 +48,7 @@
 		technologies="Angular, Angular Material"
 		projectType="App"
 		source="https://github.com/gridlocdev/chess-clock"
-		website="https://gridlocdev.github.io/chess-clock"
+		website="https://gridloc.dev/apps/chess-clock"
 		screenshot="/screenshots/chess-clock.png"
 	/>
 </div>
