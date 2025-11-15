@@ -25,15 +25,6 @@
 		screenshot="/screenshots/drum-machine.png"
 	/>
 	<ProjectListItem
-		title="Static Site Generator"
-		description="My custom-built Static Site Generator"
-		projectType="Tool"
-		technologies="C#, .NET 6, Markdown, Markdig"
-		source="https://github.com/gridlocdev/custom-static-site-generator"
-		website={null}
-		screenshot="/screenshots/developer-notes.png"
-	/>
-	<ProjectListItem
 		title="Cube Slide"
 		description="A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal"
 		technologies="Unity (Game Engine)"
