@@ -51,13 +51,4 @@
 		website="https://gridlocdev.github.io/text-adventure"
 		screenshot="/screenshots/text-adventure.png"
 	/>
-	<ProjectListItem
-		title="Portfolio (this site)"
-		description="The website that you're currently on! A portfolio website that gives a list of the projects, articles, and other details about myself as a developer."
-		projectType="Tool"
-		technologies="Vanilla JS, Bootstrap"
-		source="https://github.com/gridlocdev/developer-portfolio-website"
-		website="https://gridloc.dev"
-		screenshot={null}
-	/>
 </div>
