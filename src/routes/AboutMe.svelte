@@ -1,24 +1,14 @@
 <h2 id="about" class="mt-10 p-4 text-center text-4xl font-bold">About Me</h2>
 <article class="flex flex-col gap-4 px-8 opacity-75">
 	<section>
-		<h3 class="text-xl">Who am I?</h3>
 		<p class="mt-4 pl-4 text-base">
-			I am a video game player, music listener, anime watcher, and professionally have been a
-			software engineer writing .NET stuff since 2019.
-		</p>
-	</section>
-	<section>
-		<h3 class="text-xl">My background</h3>
-		<p class="mt-4 pl-4 text-base">
-			I've always loved the process of creating things; when I was younger, I would spend countless
-			hours in the <i>Halo</i> video game's level editors creating maps to play with friends.
-		</p>
-	</section>
-	<section>
-		<h3 class="text-xl">What's on this site?</h3>
-		<p class="mt-4 pl-4 text-base">
-			This site has the projects and other things that I've built in my spare time, which have been
-			helpful for me to improve my programming, writing, and planning skills.
+			I'm a software engineer that typically does large, complicated enterprise projects for work,
+			but I like to make small, fun bits of software like this on the side.
+			<br><br>
+			Large projects great and rewarding, and (pretty much always) provide more value to the world,
+			but sometimes I just want to poke at my own brain a bit.
+			I think there's a pretty rewarding feedback loop in the process of creating something
+			that's useful and interactive.
 		</p>
 	</section>
 </article>
