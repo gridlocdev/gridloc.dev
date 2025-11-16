@@ -32,5 +32,13 @@
 			<img class="h-6 w-6 md:hidden" src="{base}/icons/user.svg" alt="projects icon" />
 			about</a
 		>
+		<a
+			class="flex flex-col items-center gap-1 transition-opacity hover:opacity-50 md:text-lg"
+			href="https://github.com/gridlocdev"
+			target="_blank"
+		>
+			<img class="h-6 w-6 md:hidden" src="{base}/icons/github-mark.svg" alt="projects icon" />
+			github</a
+		>
 	</section>
 </nav>
