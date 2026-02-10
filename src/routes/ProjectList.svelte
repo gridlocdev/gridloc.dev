@@ -1,54 +1,71 @@
 <script>
 	import ProjectListItem from './ProjectListItem.svelte';
+	import ProjectModal from './ProjectModal.svelte';
 
-	// valid ProjectType values: 'App', 'Tool', 'Game'
+	const projects = [
+		{
+			title: 'wor6le',
+			description:
+				'A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more clues for finding the right words.',
+			projectType: 'Game',
+			technologies: 'Flutter',
+			website: 'https://gridloc.dev/games/wor6le/',
+			source: 'https://github.com/gridlocdev/wor6le',
+			screenshot: '/screenshots/wor6le.png'
+		},
+		{
+			title: 'Drum Machine',
+			description: 'A drum machine that you can play with the keyboard',
+			projectType: 'App',
+			technologies: 'Web Components, Vanilla CSS',
+			source: 'https://github.com/gridlocdev/drum-machine',
+			website: 'https://gridloc.dev/apps/drum-machine',
+			screenshot: '/screenshots/drum-machine.png'
+		},
+		{
+			title: 'Cube Slide',
+			description:
+				'A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal',
+			projectType: 'Game',
+			technologies: 'Unity (Game Engine)',
+			source: 'https://github.com/gridlocdev/cube-slide',
+			website: 'https://gridloc.dev/games/cube-slide',
+			screenshot: '/screenshots/cube-slide.png'
+		},
+		{
+			title: 'Chess Clock',
+			description: 'A web-based clock application for timing games of Chess',
+			projectType: 'App',
+			technologies: 'Angular, Angular Material',
+			source: 'https://github.com/gridlocdev/chess-clock',
+			website: 'https://gridloc.dev/apps/chess-clock',
+			screenshot: '/screenshots/chess-clock.png'
+		},
+		{
+			title: 'Username Generator',
+			description: 'A set of applications for creating randomly-generated usernames',
+			projectType: 'Tool',
+			technologies: 'C#, .NET 6, Terminal.GUI, Blazor WebAssembly, Avalonia UI',
+			website: null,
+			source: 'https://github.com/gridlocdev/UsernameGenerator',
+			screenshot: '/screenshots/username-generator.png'
+		}
+	];
+
+	let selectedProject = $state(null);
 </script>
 
-<h2 id="projects" class="mt-12 p-12 text-center text-3xl font-bold">Projects</h2>
-<div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-	<ProjectListItem
-		title="wor6le"
-		description="A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more clues for finding the right words."
-		projectType="Game"
-		technologies="Flutter"
-		website="https://gridloc.dev/games/wor6le/"
-		source="https://github.com/gridlocdev/wor6le"
-		screenshot="/screenshots/wor6le.png"
-	/>
-	<ProjectListItem
-	title="Drum Machine"
-	description="A drum machine that you can play with the keyboard"
-	projectType="App"
-	technologies="Web Components, Vanilla CSS"
-	source="https://github.com/gridlocdev/drum-machine"
-	website="https://gridloc.dev/apps/drum-machine"
-	screenshot="/screenshots/drum-machine.png"
-	/>
-	<ProjectListItem
-	title="Cube Slide"
-	description="A jump-less 3D platformer video game where a cube slides around obstacles to make its way to the goal"
-	technologies="Unity (Game Engine)"
-	projectType="Game"
-	source="https://github.com/gridlocdev/cube-slide"
-	website="https://gridloc.dev/games/cube-slide"
-	screenshot="/screenshots/cube-slide.png"
-	/>
-	<ProjectListItem
-	title="Chess Clock"
-	description="A web-based clock application for timing games of Chess"
-	technologies="Angular, Angular Material"
-	projectType="App"
-	source="https://github.com/gridlocdev/chess-clock"
-	website="https://gridloc.dev/apps/chess-clock"
-	screenshot="/screenshots/chess-clock.png"
-	/>
-	<ProjectListItem
-		title="Username Generator"
-		description="A set of applications for creating randomly-generated usernames"
-		projectType="Tool"
-		technologies="C#, .NET 6, Terminal.GUI, Blazor WebAssembly, Avalonia UI"
-		website={null}
-		source="https://github.com/gridlocdev/UsernameGenerator"
-		screenshot="/screenshots/username-generator.png"
-	/>
+<div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
+	{#each projects as project}
+		<ProjectListItem
+			title={project.title}
+			description={project.description}
+			screenshot={project.screenshot}
+			onclick={() => (selectedProject = project)}
+		/>
+	{/each}
 </div>
+
+{#if selectedProject}
+	<ProjectModal project={selectedProject} onclose={() => (selectedProject = null)} />
+{/if}
