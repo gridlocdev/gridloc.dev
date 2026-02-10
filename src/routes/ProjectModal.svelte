@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import { fade } from 'svelte/transition';
 
-	let { project, onclose, onprev, onnext } = $props();
+	let { project, current, total, onclose, onprev, onnext } = $props();
 
 	// Split technologies and projectType into pill tags
 	let pills = $derived([
@@ -60,6 +60,7 @@
 		<button
 			class="absolute top-3 right-3 z-10 bg-background/60 rounded-full w-8 h-8 flex items-center justify-center text-text hover:bg-background/80 transition-colors cursor-pointer"
 			onclick={onclose}
+			aria-label="Close"
 		>
 			&times;
 		</button>
@@ -94,6 +95,7 @@
 					<a
 						href={project.source}
 						target="_blank"
+						rel="noopener noreferrer"
 						class="flex items-center gap-2 rounded-full border-2 border-accent px-6 py-2 text-sm font-bold transition hover:scale-95 hover:opacity-60"
 					>
 						<span>Source</span>
@@ -108,6 +110,7 @@
 					<a
 						href={project.website}
 						target="_blank"
+						rel="noopener noreferrer"
 						class="flex items-center gap-2 rounded-full bg-accent bg-gradient-to-tl from-secondary px-6 py-2 text-sm font-bold brightness-125 transition hover:scale-95 hover:brightness-100"
 					>
 						<span>{websiteLabel}</span>
@@ -122,18 +125,21 @@
 		</div>
 
 		<!-- Prev / Next navigation -->
-		<div class="absolute bottom-3 right-3 flex gap-2">
+		<div class="absolute bottom-3 right-3 flex items-center gap-2">
 			<button
 				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onprev ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
 				onclick={onprev}
 				disabled={!onprev}
+				aria-label="Previous project"
 			>
 				&#8249;
 			</button>
+			<span class="text-xs text-text/70 tabular-nums">{current} / {total}</span>
 			<button
 				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onnext ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
 				onclick={onnext}
 				disabled={!onnext}
+				aria-label="Next project"
 			>
 				&#8250;
 			</button>

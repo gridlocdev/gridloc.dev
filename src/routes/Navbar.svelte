@@ -13,6 +13,7 @@
 	<a
 		href="https://github.com/gridlocdev"
 		target="_blank"
+		rel="noopener noreferrer"
 		class="transition-opacity hover:opacity-50"
 	>
 		<img

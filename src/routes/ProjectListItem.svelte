@@ -4,10 +4,7 @@
 	let { title, description, screenshot, onclick } = $props();
 </script>
 
-<button
-	class="aspect-square w-full overflow-hidden rounded-lg relative group cursor-pointer"
-	{onclick}
->
+<button class="aspect-square w-full overflow-hidden rounded-lg relative group cursor-pointer" {onclick}>
 	{#if screenshot}
 		<img
 			src="{base}{screenshot}"
@@ -16,13 +13,23 @@
 		/>
 	{/if}
 
-	<!-- Title overlay (bottom-right) -->
-	<span class="absolute bottom-3 right-3 bg-background/80 px-3 py-1 rounded text-sm font-bold">
-		{title}
-	</span>
-
-	<!-- Hover description overlay -->
-	<div class="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center p-6">
+	<!-- Hover description overlay (desktop only) -->
+	<div
+		class="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center px-6 py-12"
+	>
 		<p class="text-sm text-center">{description}</p>
 	</div>
+
+	<!-- Mobile: bottom bar with title + View -->
+	<div
+		class="md:hidden absolute inset-x-0 bottom-0 bg-gradient-to-t from-background/90 to-transparent px-4 py-3"
+	>
+		<span class="block text-base font-bold text-center"><span class="bg-background/70 px-3 py-1 rounded-full">{title}</span></span>
+		<span class="absolute right-4 bottom-3 text-xs opacity-70">Tap to View</span>
+	</div>
+
+	<!-- Desktop: title chip bottom-right -->
+	<span class="hidden md:block absolute bottom-3 right-3 bg-background/60 px-3 py-1 rounded-full text-sm font-bold">
+		{title}
+	</span>
 </button>

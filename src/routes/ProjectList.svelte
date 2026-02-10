@@ -70,6 +70,8 @@
 {#if selectedProject}
 	<ProjectModal
 		project={selectedProject}
+		current={selectedIndex + 1}
+		total={projects.length}
 		onclose={() => (selectedIndex = -1)}
 		onprev={selectedIndex > 0 ? () => (selectedIndex--) : null}
 		onnext={selectedIndex < projects.length - 1 ? () => (selectedIndex++) : null}
