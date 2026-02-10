@@ -45,11 +45,13 @@
 <svelte:window onkeydown={handleKeydown} />
 
 <!-- Backdrop -->
-<!-- svelte-ignore a11y_no_static_element_interactions a11y_click_events_have_key_events -->
 <div
 	class="fixed inset-0 z-50 bg-background/70 backdrop-blur-sm flex items-center justify-center p-4"
 	onclick={handleBackdropClick}
+	onkeydown={(e) => e.key === 'Enter' && handleBackdropClick()}
 	transition:fade={{ duration: 150 }}
+	role="button"
+	tabindex="-1"
 >
 	<!-- Panel -->
 	<div class="max-w-4xl w-full rounded-xl bg-secondary ring-1 ring-text/20 flex flex-col md:flex-row overflow-hidden relative">
@@ -87,8 +89,7 @@
 			<p class="text-sm leading-relaxed opacity-90">{project.description}</p>
 
 			<!-- Buttons -->
-			<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
-			<div class="flex flex-wrap gap-3 mt-auto" onclick={(e) => e.stopPropagation()}>
+			<div class="flex flex-wrap gap-3 mt-auto">
 				{#if project.source}
 					<a
 						href={project.source}
@@ -123,11 +124,10 @@
 		</div>
 
 		<!-- Prev / Next navigation -->
-		<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
-		<div class="absolute bottom-3 right-3 flex items-center gap-2" onclick={(e) => e.stopPropagation()}>
+		<div class="absolute bottom-3 right-3 flex items-center gap-2">
 			<button
 				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onprev ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
-				onclick={onprev}
+				onclick={(e) => { e.stopPropagation(); if (onprev) onprev(); }}
 				disabled={!onprev}
 				aria-label="Previous project"
 			>
@@ -136,7 +136,7 @@
 			<span class="text-xs text-text/70 tabular-nums">{current} / {total}</span>
 			<button
 				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onnext ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
-				onclick={onnext}
+				onclick={(e) => { e.stopPropagation(); if (onnext) onnext(); }}
 				disabled={!onnext}
 				aria-label="Next project"
 			>
