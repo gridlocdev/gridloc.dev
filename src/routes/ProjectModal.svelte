@@ -2,7 +2,7 @@
 	import { base } from '$app/paths';
 	import { fade } from 'svelte/transition';
 
-	let { project, onclose } = $props();
+	let { project, onclose, onprev, onnext } = $props();
 
 	// Split technologies and projectType into pill tags
 	let pills = $derived([
@@ -22,6 +22,10 @@
 	function handleKeydown(event) {
 		if (event.key === 'Escape') {
 			onclose();
+		} else if (event.key === 'ArrowLeft' && onprev) {
+			onprev();
+		} else if (event.key === 'ArrowRight' && onnext) {
+			onnext();
 		}
 	}
 
@@ -115,6 +119,24 @@
 					</a>
 				{/if}
 			</div>
+		</div>
+
+		<!-- Prev / Next navigation -->
+		<div class="absolute bottom-3 right-3 flex gap-2">
+			<button
+				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onprev ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
+				onclick={onprev}
+				disabled={!onprev}
+			>
+				&#8249;
+			</button>
+			<button
+				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onnext ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
+				onclick={onnext}
+				disabled={!onnext}
+			>
+				&#8250;
+			</button>
 		</div>
 	</div>
 </div>

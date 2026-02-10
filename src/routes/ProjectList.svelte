@@ -52,20 +52,26 @@
 		}
 	];
 
-	let selectedProject = $state(null);
+	let selectedIndex = $state(-1);
+	let selectedProject = $derived(selectedIndex >= 0 ? projects[selectedIndex] : null);
 </script>
 
 <div class="grid grid-cols-[repeat(auto-fit,minmax(250px,1fr))] gap-4">
-	{#each projects as project}
+	{#each projects as project, i}
 		<ProjectListItem
 			title={project.title}
 			description={project.description}
 			screenshot={project.screenshot}
-			onclick={() => (selectedProject = project)}
+			onclick={() => (selectedIndex = i)}
 		/>
 	{/each}
 </div>
 
 {#if selectedProject}
-	<ProjectModal project={selectedProject} onclose={() => (selectedProject = null)} />
+	<ProjectModal
+		project={selectedProject}
+		onclose={() => (selectedIndex = -1)}
+		onprev={selectedIndex > 0 ? () => (selectedIndex--) : null}
+		onnext={selectedIndex < projects.length - 1 ? () => (selectedIndex++) : null}
+	/>
 {/if}
