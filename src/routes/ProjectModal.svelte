@@ -29,11 +29,8 @@
 		}
 	}
 
-	function handleBackdropClick(event) {
-		// Only close if clicking the backdrop itself, not the panel
-		if (event.target === event.currentTarget) {
-			onclose();
-		}
+	function handleBackdropClick() {
+		onclose();
 	}
 
 	// Lock body scroll while modal is open
@@ -90,7 +87,8 @@
 			<p class="text-sm leading-relaxed opacity-90">{project.description}</p>
 
 			<!-- Buttons -->
-			<div class="flex flex-wrap gap-3 mt-auto">
+			<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
+			<div class="flex flex-wrap gap-3 mt-auto" onclick={(e) => e.stopPropagation()}>
 				{#if project.source}
 					<a
 						href={project.source}
@@ -125,7 +123,8 @@
 		</div>
 
 		<!-- Prev / Next navigation -->
-		<div class="absolute bottom-3 right-3 flex items-center gap-2">
+		<!-- svelte-ignore a11y_click_events_have_key_events a11y_no_static_element_interactions -->
+		<div class="absolute bottom-3 right-3 flex items-center gap-2" onclick={(e) => e.stopPropagation()}>
 			<button
 				class="bg-background/60 rounded-full w-9 h-9 flex items-center justify-center text-text text-lg transition-colors {onprev ? 'hover:bg-background/80 cursor-pointer' : 'opacity-30 cursor-not-allowed'}"
 				onclick={onprev}
