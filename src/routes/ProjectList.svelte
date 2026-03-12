@@ -4,6 +4,16 @@
 
 	const projects = [
 		{
+			title: 'Slap Master',
+			description:
+				'A local multiplayer fighting game where you play as floating heads with big ol' hands. Inspired by Wii Sports Boxing and Circle of Sumo.',
+			projectType: 'Game',
+			technologies: 'Babylon.js, TypeScript',
+			website: 'https://gridloc.dev/games/slap-master',
+			source: 'https://github.com/gridlocdev/slap-master-game',
+			screenshot: '/screenshots/slap-master.png'
+		},
+		{
 			title: 'wor6le',
 			description:
 				'A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more clues for finding the right words.',
