@@ -6,12 +6,22 @@
 		{
 			title: 'Slap Master',
 			description:
-				'A local multiplayer fighting game where you play as floating heads with big ol' hands. Inspired by Wii Sports Boxing and Circle of Sumo.',
+				'A local multiplayer fighting game where you play as floating heads with big ol\' hands. Inspired by Wii Sports Boxing and Circle of Sumo.',
 			projectType: 'Game',
 			technologies: 'Babylon.js, TypeScript',
 			website: 'https://gridloc.dev/games/slap-master',
 			source: 'https://github.com/gridlocdev/slap-master-game',
 			screenshot: '/screenshots/slap-master.png'
+		},
+		{
+			title: '3D Snake',
+			description:
+				'You\'re a snake that eats orbs in 3d space, try not to get motion sick!',
+			projectType: 'Game',
+			technologies: 'Babylon.js, TypeScript',
+			website: 'https://gridloc.dev/games/3d-snake',
+			source: 'https://github.com/gridlocdev/3d-snake-game',
+			screenshot: '/screenshots/3d-snake.png'
 		},
 		{
 			title: 'wor6le',
