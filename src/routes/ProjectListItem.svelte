@@ -15,7 +15,7 @@
 
 	<!-- Hover description overlay (desktop only) -->
 	<div
-		class="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center px-6 py-12"
+		class="absolute inset-0 bg-background/50 opacity-0 group-hover:opacity-100 transition-[opacity,backdrop-filter] backdrop-blur-none group-hover:backdrop-blur-sm flex items-center justify-center px-6 py-12"
 	>
 		<p class="text-sm text-center">{description}</p>
 	</div>
