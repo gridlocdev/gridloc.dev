@@ -218,23 +218,19 @@ body {
 /* ---------- Filtering (no JavaScript, just the checked radio) ---------- */
 
 .showing-games,
-.showing-music,
-.showing-tools {
+.showing-apps {
 	display: none;
 }
 
 .projects:has(#filter-games:checked) .card:not(.type-game),
-.projects:has(#filter-music:checked) .card:not(.type-music),
-.projects:has(#filter-tools:checked) .card:not(.type-tool),
+.projects:has(#filter-apps:checked) .card:not(.type-app),
 .projects:has(#filter-games:checked) .showing-all,
-.projects:has(#filter-music:checked) .showing-all,
-.projects:has(#filter-tools:checked) .showing-all {
+.projects:has(#filter-apps:checked) .showing-all {
 	display: none;
 }
 
 .projects:has(#filter-games:checked) .showing-games,
-.projects:has(#filter-music:checked) .showing-music,
-.projects:has(#filter-tools:checked) .showing-tools {
+.projects:has(#filter-apps:checked) .showing-apps {
 	display: inline;
 }
 

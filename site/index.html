@@ -6,7 +6,7 @@
 		<title>gridlocdev's portfolio</title>
 		<meta
 			name="description"
-			content="Small games and handy tools by gridlocdev, built for fun."
+			content="Small games and apps by gridlocdev, built for fun."
 		/>
 		<link rel="icon" href="icons/favicon.png" />
 		<link rel="stylesheet" href="style.css" />
@@ -15,12 +15,12 @@
 		<!--
 			How this page works:
 			- There is no JavaScript. Everything is plain HTML and CSS.
-			- The filter chips (All / Games / Music / Tools) are radio buttons.
+			- The filter chips (All / Games / Apps) are radio buttons.
 			  style.css hides the cards that don't match the checked one.
 
 			To add a project:
 			1. Copy one of the <article class="card"> blocks and change its text and links.
-			2. Give it the right class: type-game, type-music or type-tool.
+			2. Give it the right class: type-game or type-app.
 			3. Update the counts in the intro line, the filter chips and the "Showing" lines.
 		-->
 		<div class="page">
@@ -44,8 +44,8 @@
 
 			<main>
 				<section class="intro">
-					<p class="intro-eyebrow">7 projects · games, music and tools</p>
-					<h1>Small games and handy tools, built for fun.</h1>
+					<p class="intro-eyebrow">5 projects · games and apps</p>
+					<h1>Small games and apps, built for fun.</h1>
 					<p class="intro-text">
 						Pick something below to try it out, or open the source to see how it works.
 					</p>
@@ -57,24 +57,20 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">7</span></label>
+							<label for="filter-all">All <span class="filter-count">5</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">4</span></label>
 
-							<input type="radio" name="filter" id="filter-music" />
-							<label for="filter-music">Music <span class="filter-count">1</span></label>
-
-							<input type="radio" name="filter" id="filter-tools" />
-							<label for="filter-tools">Tools <span class="filter-count">2</span></label>
+							<input type="radio" name="filter" id="filter-apps" />
+							<label for="filter-apps">Apps <span class="filter-count">1</span></label>
 						</fieldset>
 
 						<!-- Only the line that matches the checked filter is shown -->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 7 of 7</span>
-							<span class="showing-games">Showing 4 of 7</span>
-							<span class="showing-music">Showing 1 of 7</span>
-							<span class="showing-tools">Showing 2 of 7</span>
+							<span class="showing-all">Showing 5 of 5</span>
+							<span class="showing-games">Showing 4 of 5</span>
+							<span class="showing-apps">Showing 1 of 5</span>
 						</p>
 					</div>
 
@@ -166,12 +162,12 @@
 							</div>
 						</article>
 
-						<article class="card type-music" id="drum-machine">
+						<article class="card type-app" id="drum-machine">
 							<img src="screenshots/drum-machine.png" alt="Screenshot of Drum Machine" />
 							<div class="card-body">
 								<div class="card-heading">
 									<h2>Drum Machine</h2>
-									<span class="card-type">Music</span>
+									<span class="card-type">App</span>
 								</div>
 								<p class="card-description">A drum machine that you can play with the keyboard.</p>
 								<div class="card-footer">
@@ -181,43 +177,6 @@
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/drum-machine" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Web Components</span>
-								</div>
-							</div>
-						</article>
-
-						<article class="card type-tool" id="chess-clock">
-							<img src="screenshots/chess-clock.png" alt="Screenshot of Chess Clock" />
-							<div class="card-body">
-								<div class="card-heading">
-									<h2>Chess Clock</h2>
-									<span class="card-type">Tool</span>
-								</div>
-								<p class="card-description">A web-based clock for timing games of chess.</p>
-								<div class="card-footer">
-									<a class="button-primary" href="https://gridloc.dev/apps/chess-clock" target="_blank" rel="noopener noreferrer">
-										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
-										Open
-									</a>
-									<a class="button-secondary" href="https://github.com/gridlocdev/chess-clock" target="_blank" rel="noopener noreferrer">Source</a>
-									<span class="card-tech">Angular</span>
-								</div>
-							</div>
-						</article>
-
-						<article class="card type-tool" id="username-generator">
-							<img src="screenshots/username-generator.png" alt="Screenshot of Username Generator" />
-							<div class="card-body">
-								<div class="card-heading">
-									<h2>Username Generator</h2>
-									<span class="card-type">Tool</span>
-								</div>
-								<p class="card-description">
-									A set of terminal, desktop and web apps for creating randomly-generated
-									usernames.
-								</p>
-								<div class="card-footer">
-									<a class="button-secondary" href="https://github.com/gridlocdev/UsernameGenerator" target="_blank" rel="noopener noreferrer">Source</a>
-									<span class="card-tech">C# / .NET</span>
 								</div>
 							</div>
 						</article>
