@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>gridlocdev's portfolio</title>
+		<link rel="icon" href="icons/favicon.png" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" defer></script>
+	</head>
+	<body>
+		<!--
+			How this page works:
+			- Each project has a card (in the grid) and a modal (further down).
+			- A card links to "#project-id". The browser then marks the modal with that id
+			  as the :target, and style.css shows it. No JavaScript is needed for this.
+			- Close links point to "#close", which matches nothing, so every modal hides again.
+			- script.js only adds keyboard shortcuts (Escape, arrow keys) and focus handling.
+
+			To add a project: copy one card and one modal, give the modal a new id,
+			and update the prev/next links and the "1 / 7" counters.
+		-->
+		<header>
+			<nav class="navbar">
+				<a href="./">
+					<img class="navbar-logo" src="brand/brand-logo.svg" alt="gridlocdev brand logo" />
+				</a>
+				<a
+					class="navbar-github"
+					href="https://github.com/gridlocdev"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
+					<img src="icons/github-mark.svg" alt="GitHub" />
+				</a>
+			</nav>
+		</header>
+
+		<main>
+			<!-- ========== Project cards ========== -->
+			<div class="project-grid">
+				<a class="card" href="#slap-master">
+					<img src="screenshots/slap-master.png" alt="Screenshot of Slap Master" />
+					<div class="card-overlay">
+						<p>
+							A local multiplayer fighting game where you play as floating heads with big ol'
+							hands. Inspired by Wii Sports Boxing and Circle of Sumo.
+						</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>Slap Master</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">Slap Master</span>
+				</a>
+
+				<a class="card" href="#3d-snake">
+					<img src="screenshots/3d-snake.png" alt="Screenshot of 3D Snake" />
+					<div class="card-overlay">
+						<p>You're a snake that eats orbs in 3d space, try not to get motion sick!</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>3D Snake</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">3D Snake</span>
+				</a>
+
+				<a class="card" href="#wor6le">
+					<img src="screenshots/wor6le.png" alt="Screenshot of wor6le" />
+					<div class="card-overlay">
+						<p>
+							A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more
+							clues for finding the right words.
+						</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>wor6le</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">wor6le</span>
+				</a>
+
+				<a class="card" href="#drum-machine">
+					<img src="screenshots/drum-machine.png" alt="Screenshot of Drum Machine" />
+					<div class="card-overlay">
+						<p>A drum machine that you can play with the keyboard</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>Drum Machine</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">Drum Machine</span>
+				</a>
+
+				<a class="card" href="#cube-slide">
+					<img src="screenshots/cube-slide.png" alt="Screenshot of Cube Slide" />
+					<div class="card-overlay">
+						<p>
+							A jump-less 3D platformer video game where a cube slides around obstacles to make its
+							way to the goal
+						</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>Cube Slide</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">Cube Slide</span>
+				</a>
+
+				<a class="card" href="#chess-clock">
+					<img src="screenshots/chess-clock.png" alt="Screenshot of Chess Clock" />
+					<div class="card-overlay">
+						<p>A web-based clock application for timing games of Chess</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>Chess Clock</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">Chess Clock</span>
+				</a>
+
+				<a class="card" href="#username-generator">
+					<img src="screenshots/username-generator.png" alt="Screenshot of Username Generator" />
+					<div class="card-overlay">
+						<p>A set of applications for creating randomly-generated usernames</p>
+					</div>
+					<div class="card-mobile-bar">
+						<span class="card-mobile-title"><span>Username Generator</span></span>
+						<span class="card-mobile-hint">Tap to View</span>
+					</div>
+					<span class="card-title">Username Generator</span>
+				</a>
+			</div>
+
+			<!-- ========== Project modals (hidden until their id is in the URL) ========== -->
+
+			<div class="modal" id="slap-master" role="dialog" aria-modal="true" aria-labelledby="slap-master-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/slap-master.png" alt="Screenshot of Slap Master" />
+					<div class="modal-details">
+						<h2 id="slap-master-title">Slap Master</h2>
+						<div class="pills">
+							<span class="pill">Game</span>
+							<span class="pill">Babylon.js</span>
+							<span class="pill">TypeScript</span>
+						</div>
+						<p>
+							A local multiplayer fighting game where you play as floating heads with big ol'
+							hands. Inspired by Wii Sports Boxing and Circle of Sumo.
+						</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/slap-master-game" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/games/slap-master" target="_blank" rel="noopener noreferrer">
+								<span>Play</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<span class="modal-nav-button disabled" aria-hidden="true">&#8249;</span>
+						<span class="modal-count">1 / 7</span>
+						<a class="modal-nav-button modal-next" href="#3d-snake" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="3d-snake" role="dialog" aria-modal="true" aria-labelledby="3d-snake-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/3d-snake.png" alt="Screenshot of 3D Snake" />
+					<div class="modal-details">
+						<h2 id="3d-snake-title">3D Snake</h2>
+						<div class="pills">
+							<span class="pill">Game</span>
+							<span class="pill">Babylon.js</span>
+							<span class="pill">TypeScript</span>
+						</div>
+						<p>You're a snake that eats orbs in 3d space, try not to get motion sick!</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/3d-snake-game" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/games/3d-snake" target="_blank" rel="noopener noreferrer">
+								<span>Play</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#slap-master" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">2 / 7</span>
+						<a class="modal-nav-button modal-next" href="#wor6le" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="wor6le" role="dialog" aria-modal="true" aria-labelledby="wor6le-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/wor6le.png" alt="Screenshot of wor6le" />
+					<div class="modal-details">
+						<h2 id="wor6le-title">wor6le</h2>
+						<div class="pills">
+							<span class="pill">Game</span>
+							<span class="pill">Flutter</span>
+						</div>
+						<p>
+							A word-guessing game inspired by Wordle, but with 6 letters and arrows to give more
+							clues for finding the right words.
+						</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/wor6le" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/games/wor6le/" target="_blank" rel="noopener noreferrer">
+								<span>Play</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#3d-snake" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">3 / 7</span>
+						<a class="modal-nav-button modal-next" href="#drum-machine" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="drum-machine" role="dialog" aria-modal="true" aria-labelledby="drum-machine-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/drum-machine.png" alt="Screenshot of Drum Machine" />
+					<div class="modal-details">
+						<h2 id="drum-machine-title">Drum Machine</h2>
+						<div class="pills">
+							<span class="pill">App</span>
+							<span class="pill">Web Components</span>
+							<span class="pill">Vanilla CSS</span>
+						</div>
+						<p>A drum machine that you can play with the keyboard</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/drum-machine" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/apps/drum-machine" target="_blank" rel="noopener noreferrer">
+								<span>Open App</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#wor6le" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">4 / 7</span>
+						<a class="modal-nav-button modal-next" href="#cube-slide" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="cube-slide" role="dialog" aria-modal="true" aria-labelledby="cube-slide-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/cube-slide.png" alt="Screenshot of Cube Slide" />
+					<div class="modal-details">
+						<h2 id="cube-slide-title">Cube Slide</h2>
+						<div class="pills">
+							<span class="pill">Game</span>
+							<span class="pill">Unity (Game Engine)</span>
+						</div>
+						<p>
+							A jump-less 3D platformer video game where a cube slides around obstacles to make its
+							way to the goal
+						</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/cube-slide" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/games/cube-slide" target="_blank" rel="noopener noreferrer">
+								<span>Play</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#drum-machine" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">5 / 7</span>
+						<a class="modal-nav-button modal-next" href="#chess-clock" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="chess-clock" role="dialog" aria-modal="true" aria-labelledby="chess-clock-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/chess-clock.png" alt="Screenshot of Chess Clock" />
+					<div class="modal-details">
+						<h2 id="chess-clock-title">Chess Clock</h2>
+						<div class="pills">
+							<span class="pill">App</span>
+							<span class="pill">Angular</span>
+							<span class="pill">Angular Material</span>
+						</div>
+						<p>A web-based clock application for timing games of Chess</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/chess-clock" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+							<a class="button-website" href="https://gridloc.dev/apps/chess-clock" target="_blank" rel="noopener noreferrer">
+								<span>Open App</span>
+								<img src="icons/link.svg" alt="link icon" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#cube-slide" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">6 / 7</span>
+						<a class="modal-nav-button modal-next" href="#username-generator" aria-label="Next project">&#8250;</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="modal" id="username-generator" role="dialog" aria-modal="true" aria-labelledby="username-generator-title" tabindex="-1">
+				<a class="modal-backdrop" href="#close" tabindex="-1" aria-hidden="true"></a>
+				<div class="modal-panel">
+					<a class="modal-close" href="#close" aria-label="Close">&times;</a>
+					<img class="modal-screenshot" src="screenshots/username-generator.png" alt="Screenshot of Username Generator" />
+					<div class="modal-details">
+						<h2 id="username-generator-title">Username Generator</h2>
+						<div class="pills">
+							<span class="pill">Tool</span>
+							<span class="pill">C#</span>
+							<span class="pill">.NET 6</span>
+							<span class="pill">Terminal.GUI</span>
+							<span class="pill">Blazor WebAssembly</span>
+							<span class="pill">Avalonia UI</span>
+						</div>
+						<p>A set of applications for creating randomly-generated usernames</p>
+						<div class="modal-links">
+							<a class="button-source" href="https://github.com/gridlocdev/UsernameGenerator" target="_blank" rel="noopener noreferrer">
+								<span>Source</span>
+								<img src="icons/github-mark.svg" alt="GitHub" />
+							</a>
+						</div>
+					</div>
+					<div class="modal-nav">
+						<a class="modal-nav-button modal-prev" href="#chess-clock" aria-label="Previous project">&#8249;</a>
+						<span class="modal-count">7 / 7</span>
+						<span class="modal-nav-button disabled" aria-hidden="true">&#8250;</span>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+</html>
