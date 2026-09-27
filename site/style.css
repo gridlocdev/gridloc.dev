@@ -217,11 +217,6 @@ body {
 
 /* ---------- Filtering (no JavaScript, just the checked radio) ---------- */
 
-.showing-games,
-.showing-apps {
-	display: none;
-}
-
 .projects:has(#filter-games:checked) .card:not(.type-game),
 .projects:has(#filter-apps:checked) .card:not(.type-app),
 .projects:has(#filter-games:checked) .showing-all,
@@ -295,8 +290,12 @@ body {
 	color: var(--text-dim);
 }
 
-/* Buttons on the left, technology on the right, pinned to the bottom of the card */
-.card-footer {
+/*
+	Buttons on the left, technology on the right, pinned to the bottom of the card.
+	It's a <p> and not called "card-footer" so browser reader modes keep it:
+	they drop anything named "footer" and any <div> that is mostly links.
+*/
+.card-actions {
 	display: flex;
 	align-items: center;
 	gap: 0.5rem;

@@ -66,11 +66,14 @@
 							<label for="filter-apps">Apps <span class="filter-count">1</span></label>
 						</fieldset>
 
-						<!-- Only the line that matches the checked filter is shown -->
+						<!--
+							Only the line that matches the checked filter is shown.
+							The "hidden" attribute keeps reader mode from showing all of them.
+						-->
 						<p class="showing" aria-live="polite">
 							<span class="showing-all">Showing 5 of 5</span>
-							<span class="showing-games">Showing 4 of 5</span>
-							<span class="showing-apps">Showing 1 of 5</span>
+							<span class="showing-games" hidden>Showing 4 of 5</span>
+							<span class="showing-apps" hidden>Showing 1 of 5</span>
 						</p>
 					</div>
 
@@ -86,14 +89,14 @@
 									A local multiplayer fighting game where you play as floating heads with big
 									ol' hands. Inspired by Wii Sports Boxing and Circle of Sumo.
 								</p>
-								<div class="card-footer">
+								<p class="card-actions">
 									<a class="button-primary" href="https://gridloc.dev/games/slap-master" target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
 										Play
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/slap-master-game" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Babylon.js</span>
-								</div>
+								</p>
 							</div>
 						</article>
 
@@ -107,14 +110,14 @@
 								<p class="card-description">
 									The classic game of Snake reimagined in 3D. Try not to get motion sick!
 								</p>
-								<div class="card-footer">
+								<p class="card-actions">
 									<a class="button-primary" href="https://gridloc.dev/games/3d-snake" target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
 										Play
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/3d-snake-game" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Babylon.js</span>
-								</div>
+								</p>
 							</div>
 						</article>
 
@@ -129,14 +132,14 @@
 									A word-guessing game inspired by Wordle, but with 6 letters and arrows to give
 									more clues for finding the right words.
 								</p>
-								<div class="card-footer">
+								<p class="card-actions">
 									<a class="button-primary" href="https://gridloc.dev/games/wor6le/" target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
 										Play
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/wor6le" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Flutter</span>
-								</div>
+								</p>
 							</div>
 						</article>
 
@@ -151,14 +154,14 @@
 									A jump-less 3D platformer where a cube slides around obstacles to make its way
 									to the goal.
 								</p>
-								<div class="card-footer">
+								<p class="card-actions">
 									<a class="button-primary" href="https://gridloc.dev/games/cube-slide" target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
 										Play
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/cube-slide" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Unity</span>
-								</div>
+								</p>
 							</div>
 						</article>
 
@@ -170,14 +173,14 @@
 									<span class="card-type">App</span>
 								</div>
 								<p class="card-description">A drum machine that you can play with the keyboard.</p>
-								<div class="card-footer">
+								<p class="card-actions">
 									<a class="button-primary" href="https://gridloc.dev/apps/drum-machine" target="_blank" rel="noopener noreferrer">
 										<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>
 										Play
 									</a>
 									<a class="button-secondary" href="https://github.com/gridlocdev/drum-machine" target="_blank" rel="noopener noreferrer">Source</a>
 									<span class="card-tech">Web Components</span>
-								</div>
+								</p>
 							</div>
 						</article>
 					</div>
