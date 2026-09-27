@@ -5,8 +5,8 @@ other stuff. <https://gridloc.dev/>
 
 ## How it works
 
-It's plain HTML, CSS and a little JavaScript in `site/`. There are no dependencies and no build step, and the page
-works with JavaScript turned off.
+It's plain HTML and CSS in `site/`. There is no JavaScript, no dependencies and no build step, and the page
+works in any browser.
 
 To preview it locally, run any static file server, for example:
 
