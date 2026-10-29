@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">9</span></label>
+							<label for="filter-all">All <span class="filter-count">10</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">8</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">1</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">2</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,32 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 9 of 9</span>
-							<span class="showing-games" hidden>Showing 8 of 9</span>
-							<span class="showing-apps" hidden>Showing 1 of 9</span>
+							<span class="showing-all">Showing 10 of 10</span>
+							<span class="showing-games" hidden>Showing 8 of 10</span>
+							<span class="showing-apps" hidden>Showing 2 of 10</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="exif-viewer">
+							<img src="screenshots/exif-viewer.jpg" alt="Screenshot of EXIF Viewer" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>EXIF Viewer</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A desktop app that shows what's stored inside photos and videos: when and where they were
+									taken and which camera made them.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://github.com/gridlocdev/exif-viewer-app/releases/latest" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4 3.3 3.3zM4 19h16v2H4z" /></svg>Downloads</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/exif-viewer-app" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Avalonia</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-game" id="capybara-afternoon">
 							<img src="screenshots/capybara-afternoon.jpg" alt="Screenshot of Capybara Afternoon" />
 							<div class="card-body">
