@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">11</span></label>
+							<label for="filter-all">All <span class="filter-count">12</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">8</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">3</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">4</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,31 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 11 of 11</span>
-							<span class="showing-games" hidden>Showing 8 of 11</span>
-							<span class="showing-apps" hidden>Showing 3 of 11</span>
+							<span class="showing-all">Showing 12 of 12</span>
+							<span class="showing-games" hidden>Showing 8 of 12</span>
+							<span class="showing-apps" hidden>Showing 4 of 12</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="macos-file-manager">
+							<img src="screenshots/macos-file-manager.jpg" alt="Screenshot of File Manager" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>File Manager</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A macOS file manager with the keys and habits of Windows Explorer and Linux file managers.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://github.com/gridlocdev/macos-file-manager/releases/latest" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4 3.3 3.3zM4 19h16v2H4z" /></svg>Downloads</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/macos-file-manager" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">SwiftUI</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="warmshift">
 							<img src="screenshots/warmshift.jpg" alt="Screenshot of WarmShift" />
 							<div class="card-body">
