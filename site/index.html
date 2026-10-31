@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">13</span></label>
+							<label for="filter-all">All <span class="filter-count">14</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">8</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">5</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">6</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,32 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 13 of 13</span>
-							<span class="showing-games" hidden>Showing 8 of 13</span>
-							<span class="showing-apps" hidden>Showing 5 of 13</span>
+							<span class="showing-all">Showing 14 of 14</span>
+							<span class="showing-games" hidden>Showing 8 of 14</span>
+							<span class="showing-apps" hidden>Showing 6 of 14</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="music-generator">
+							<img src="screenshots/music-generator.jpg" alt="Screenshot of Music Generator" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Music Generator</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A composer that writes songs by rule from a feeling or a story, and plays them with
+									sampled instruments, each part on its own piano.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/music-generator/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/music-generator" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">LittleJS</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="3d-concepts-explorer">
 							<img src="screenshots/3d-concepts-explorer.jpg" alt="Screenshot of 3D Concepts Explorer" />
 							<div class="card-body">
