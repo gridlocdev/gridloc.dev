@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">20</span></label>
+							<label for="filter-all">All <span class="filter-count">21</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">9</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">10</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,33 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 20 of 20</span>
-							<span class="showing-games" hidden>Showing 11 of 20</span>
-							<span class="showing-apps" hidden>Showing 9 of 20</span>
+							<span class="showing-all">Showing 21 of 21</span>
+							<span class="showing-games" hidden>Showing 11 of 21</span>
+							<span class="showing-apps" hidden>Showing 10 of 21</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="plaintain">
+							<img src="screenshots/plaintain.jpg" alt="Screenshot of Plaintain" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Plaintain</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A plain text editor for logs, config files and other files that are just text. It saves
+									each file back with the same encoding and line endings it had, opens 50 MB logs without
+									stalling, and runs on Linux, macOS and Windows.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://github.com/gridlocdev/plaintain/releases/latest" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4 3.3 3.3zM4 19h16v2H4z" /></svg>Downloads</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/plaintain" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Avalonia</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="daybird">
 							<img src="screenshots/daybird.jpg" alt="Screenshot of Daybird" />
 							<div class="card-body">
