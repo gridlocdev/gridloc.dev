@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">19</span></label>
+							<label for="filter-all">All <span class="filter-count">20</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">8</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">9</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,32 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 19 of 19</span>
-							<span class="showing-games" hidden>Showing 11 of 19</span>
-							<span class="showing-apps" hidden>Showing 8 of 19</span>
+							<span class="showing-all">Showing 20 of 20</span>
+							<span class="showing-games" hidden>Showing 11 of 20</span>
+							<span class="showing-apps" hidden>Showing 9 of 20</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="daybird">
+							<img src="screenshots/daybird.jpg" alt="Screenshot of Daybird" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Daybird</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A calendar you can run almost entirely from the keyboard, keeping each calendar as a plain
+									.ics file. Runs in the browser, on a NAS or as a desktop app on Linux, macOS and Windows.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/daybird/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/daybird" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Preact</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-game" id="scrapline">
 							<img src="screenshots/scrapline.jpg" alt="Screenshot of Scrapline" />
 							<div class="card-body">
