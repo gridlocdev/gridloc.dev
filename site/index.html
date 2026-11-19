@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">21</span></label>
+							<label for="filter-all">All <span class="filter-count">22</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">10</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">11</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,32 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 21 of 21</span>
-							<span class="showing-games" hidden>Showing 11 of 21</span>
-							<span class="showing-apps" hidden>Showing 10 of 21</span>
+							<span class="showing-all">Showing 22 of 22</span>
+							<span class="showing-games" hidden>Showing 11 of 22</span>
+							<span class="showing-apps" hidden>Showing 11 of 22</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="taskite">
+							<img src="screenshots/taskite.jpg" alt="Screenshot of Taskite" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Taskite</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A to-do list for one person, where one typed line sets a task's date, priority, project
+									and labels. Runs in the browser, on a NAS or as a desktop app.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/taskite/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/taskite" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Preact</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="plaintain">
 							<img src="screenshots/plaintain.jpg" alt="Screenshot of Plaintain" />
 							<div class="card-body">
