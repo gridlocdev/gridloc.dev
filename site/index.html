@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">22</span></label>
+							<label for="filter-all">All <span class="filter-count">23</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">11</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">12</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,32 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 22 of 22</span>
-							<span class="showing-games" hidden>Showing 11 of 22</span>
-							<span class="showing-apps" hidden>Showing 11 of 22</span>
+							<span class="showing-all">Showing 23 of 23</span>
+							<span class="showing-games" hidden>Showing 11 of 23</span>
+							<span class="showing-apps" hidden>Showing 12 of 23</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="volumix">
+							<img src="screenshots/volumix.jpg" alt="Screenshot of Volumix" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Volumix</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A macOS menu bar volume mixer that gives every app its own slider and mute button, so you
+									can turn a video call down without touching your music.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://github.com/gridlocdev/volumix/releases/latest" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M11 3h2v9.6l3.3-3.3 1.4 1.4-5.7 5.7-5.7-5.7 1.4-1.4 3.3 3.3zM4 19h16v2H4z" /></svg>Downloads</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/volumix" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">SwiftUI</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="taskite">
 							<img src="screenshots/taskite.jpg" alt="Screenshot of Taskite" />
 							<div class="card-body">
