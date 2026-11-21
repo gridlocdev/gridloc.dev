@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">23</span></label>
+							<label for="filter-all">All <span class="filter-count">24</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">12</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">13</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,33 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 23 of 23</span>
-							<span class="showing-games" hidden>Showing 11 of 23</span>
-							<span class="showing-apps" hidden>Showing 12 of 23</span>
+							<span class="showing-all">Showing 24 of 24</span>
+							<span class="showing-games" hidden>Showing 11 of 24</span>
+							<span class="showing-apps" hidden>Showing 13 of 24</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="abacite">
+							<img src="screenshots/abacite.jpg" alt="Screenshot of Abacite" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Abacite</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									A calculator that gets decimals right: type the whole calculation, see the result as you
+									type, and keep every calculation in a session saved as a plain text file. Runs in the
+									browser, as a desktop app on Linux, macOS and Windows, and on the command line.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/abacite/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/abacite" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Preact</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="volumix">
 							<img src="screenshots/volumix.jpg" alt="Screenshot of Volumix" />
 							<div class="card-body">
