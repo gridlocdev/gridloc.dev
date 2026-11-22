@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">26</span></label>
+							<label for="filter-all">All <span class="filter-count">27</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">15</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">16</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,34 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 26 of 26</span>
-							<span class="showing-games" hidden>Showing 11 of 26</span>
-							<span class="showing-apps" hidden>Showing 15 of 26</span>
+							<span class="showing-all">Showing 27 of 27</span>
+							<span class="showing-games" hidden>Showing 11 of 27</span>
+							<span class="showing-apps" hidden>Showing 16 of 27</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="voxlet">
+							<img src="screenshots/voxlet.jpg" alt="Screenshot of Voxlet" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>Voxlet</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									Records voice memos and keeps each one as an ordinary audio file in a folder you choose.
+									Play, trim, sort into folders and search them from the keyboard, and transcribe them with
+									whisper.cpp in the desktop app. Runs in the browser, as a desktop app on Linux, macOS and
+									Windows, and from a NAS.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/voxlet/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/voxlet" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Preact</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="alarmony">
 							<img src="screenshots/alarmony.jpg" alt="Screenshot of Alarmony" />
 							<div class="card-body">
