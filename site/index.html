@@ -60,13 +60,13 @@
 							<legend class="visually-hidden">Show</legend>
 
 							<input type="radio" name="filter" id="filter-all" checked />
-							<label for="filter-all">All <span class="filter-count">24</span></label>
+							<label for="filter-all">All <span class="filter-count">25</span></label>
 
 							<input type="radio" name="filter" id="filter-games" />
 							<label for="filter-games">Games <span class="filter-count">11</span></label>
 
 							<input type="radio" name="filter" id="filter-apps" />
-							<label for="filter-apps">Apps <span class="filter-count">13</span></label>
+							<label for="filter-apps">Apps <span class="filter-count">14</span></label>
 						</fieldset>
 
 						<!--
@@ -74,13 +74,34 @@
 							The "hidden" attribute keeps reader mode from showing all of them.
 						-->
 						<p class="showing" aria-live="polite">
-							<span class="showing-all">Showing 24 of 24</span>
-							<span class="showing-games" hidden>Showing 11 of 24</span>
-							<span class="showing-apps" hidden>Showing 13 of 24</span>
+							<span class="showing-all">Showing 25 of 25</span>
+							<span class="showing-games" hidden>Showing 11 of 25</span>
+							<span class="showing-apps" hidden>Showing 14 of 25</span>
 						</p>
 					</div>
 
 					<div class="project-grid">
+						<article class="card type-app" id="iouinator">
+							<img src="screenshots/iouinator.jpg" alt="Screenshot of IOUinator" />
+							<div class="card-body">
+								<div class="card-heading">
+									<h2>IOUinator</h2>
+									<span class="card-type">App</span>
+								</div>
+								<p class="card-description">
+									Keeps track of who owes whom in a group: list the people, record each debt with an amount
+									and what it was for, and a diagram shows the totals between everyone. A flattened view
+									cancels debts that go round in a loop. Runs in the browser and as a desktop app on Linux,
+									macOS and Windows.
+								</p>
+								<p class="card-actions">
+									<a class="button-primary" href="https://gridloc.dev/apps/iouinator/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 5l12 7-12 7z" /></svg>Play</a>
+									<a class="button-secondary" href="https://github.com/gridlocdev/iouinator" target="_blank" rel="noopener noreferrer">Source</a>
+									<span class="card-tech">Preact</span>
+								</p>
+							</div>
+						</article>
+
 						<article class="card type-app" id="abacite">
 							<img src="screenshots/abacite.jpg" alt="Screenshot of Abacite" />
 							<div class="card-body">
